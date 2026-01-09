@@ -1,0 +1,326 @@
+[
+  {
+    "Nome":"Rafael Defendi",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"38 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rafael-defendi\/42025",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gabriel Oliveira",
+    "Posição":"Guarda Redes",
+    "Número":"21",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/gabriel-oliveira\/595039",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Carvalho",
+    "Posição":"Guarda Redes",
+    "Número":"22",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-carvalho\/412426",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ricardo Velho",
+    "Posição":"Guarda Redes",
+    "Número":"33",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-velho\/227413",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alex Pinto",
+    "Posição":"Defesa",
+    "Número":"78",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alex-pinto\/413238",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Eduardo Mancha",
+    "Posição":"Defesa",
+    "Número":"95",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/eduardo-mancha\/461880",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Albino",
+    "Posição":"Defesa",
+    "Número":"16",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-albino\/425296",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Bandarra",
+    "Posição":"Defesa",
+    "Número":"17",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-bandarra\/247828",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Loide Augusto",
+    "Posição":"Defesa",
+    "Número":"45",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/loide-augusto\/703296",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Róbson",
+    "Posição":"Defesa",
+    "Número":"2",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/robson\/264718",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Otávio Gut",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/otavio-gut\/504791",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bura",
+    "Posição":"Defesa",
+    "Número":"13",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bura\/554773",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Henrique Gelain",
+    "Posição":"Defesa",
+    "Número":"19",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/henrique-gelain\/440728",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Abner Felipe",
+    "Posição":"Defesa",
+    "Número":"30",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/abner-felipe\/349062",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vasco Oliveira",
+    "Posição":"Defesa",
+    "Número":"72",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vasco-oliveira\/423980",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tiago Lopes",
+    "Posição":"Defesa",
+    "Número":"85",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tiago-lopes\/419578",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Amine Oudrhiri",
+    "Posição":"Médio",
+    "Número":"5",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/amine-oudrhiri\/280505",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Lucas Martello",
+    "Posição":"Médio",
+    "Número":"46",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/lucas-martello\/652147",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jonatan Lucca",
+    "Posição":"Médio",
+    "Número":"47",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jonatan-lucca\/267766",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Seruca",
+    "Posição":"Médio",
+    "Número":"50",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-seruca\/160428",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fabrício Isidoro",
+    "Posição":"Médio",
+    "Número":"14",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabricio-isidoro\/133046",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Cláudio Falcão",
+    "Posição":"Médio",
+    "Número":"29",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/claudio-falcao\/391764",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rafinha",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rafinha\/444522",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Paz",
+    "Posição":"Médio",
+    "Número":"23",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-paz\/218176",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mica Silva",
+    "Posição":"Médio",
+    "Número":"77",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mica-silva\/217816",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Emerson Tucão",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/emerson-tucao\/690537",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ângelo Taveira",
+    "Posição":"Avançado",
+    "Número":"86",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/angelo-taveira\/681348",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Idrissa Sylla",
+    "Posição":"Avançado",
+    "Número":"90",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/idrissa-sylla\/106307",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vasco Lopes",
+    "Posição":"Avançado",
+    "Número":"7",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vasco-lopes\/233507",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Madi Queta",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/madi-queta\/288913",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Harramiz",
+    "Posição":"Avançado",
+    "Número":"18",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/harramiz\/158171",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paollo Madeira",
+    "Posição":"Avançado",
+    "Número":"70",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paollo-madeira\/442313",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Henrique",
+    "Posição":"Avançado",
+    "Número":"96",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-henrique\/507350",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mihlali Mayambela",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mihlali-mayambela\/509377",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Elves Baldé",
+    "Posição":"Avançado",
+    "Número":"51",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/elves-balde\/115433",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Cristian Ponde",
+    "Posição":"Avançado",
+    "Número":"20",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/cristian-ponde\/79373",
+    "Época":"2021\/2022",
+    "Clube":"Farense"
+  }
+]

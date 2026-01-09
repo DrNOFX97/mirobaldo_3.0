@@ -1,0 +1,148 @@
+{
+  "version": "1.0.0",
+  "description": "Sporting Clube Farense Data Schema - Defines structure and format of all data",
+  "lastUpdated": "2025-10-31",
+  "dataCollections": {
+    "resultados": {
+      "description": "Complete match results and game data from 1913 onwards",
+      "primaryFile": "resultados/resultados_completos.md",
+      "format": "Markdown",
+      "structure": {
+        "header": "# ⚽ Resultados Completos - Sporting Clube Farense",
+        "sections": [
+          {
+            "level": "##",
+            "pattern": "## 📅 Resultados por Época/Competição",
+            "content": "Season-organized match results"
+          },
+          {
+            "level": "###",
+            "pattern": "### [Season]/[Competição]",
+            "content": "Individual competition results for season"
+          }
+        ],
+        "fields": ["data", "hora", "local", "adversário", "resultado", "V-E-D"]
+      },
+      "indices": ["época", "competição", "data"],
+      "relatedFiles": []
+    },
+    "classificacoes": {
+      "description": "League standings and final classifications by season",
+      "primaryFile": "classificacoes/classificacoes_completas.md",
+      "format": "Markdown",
+      "structure": {
+        "header": "# 🏆 Classificações - Sporting Clube Farense",
+        "sections": [
+          {
+            "level": "###",
+            "pattern": "### Época [Year]",
+            "content": "Classification table for season"
+          }
+        ],
+        "fields": ["posição", "pts", "j", "v", "e", "d", "gm", "gs", "dg"]
+      },
+      "indices": ["época", "competição"],
+      "relatedFiles": [
+        "classificacoes/classificacoes_essenciais.md",
+        "classificacoes/classificacoes_para_agente.md"
+      ]
+    },
+    "fotografias": {
+      "description": "Image assets for teams, players, and club figures",
+      "structure": {
+        "equipas": {
+          "description": "Team photos by season/year",
+          "format": "WebP, PNG",
+          "naming": "[YYYY-YY].webp or [YYYY-YY].png"
+        },
+        "jogadores": {
+          "description": "Individual player photographs",
+          "format": "WebP, PNG",
+          "naming": "[firstName]_[lastName].webp or .png"
+        },
+        "presidentes": {
+          "description": "Club president portraits",
+          "format": "WebP, PNG",
+          "naming": "[firstName]_[lastName].webp or .png"
+        }
+      },
+      "totalFiles": 51,
+      "indices": ["season", "player_name", "position"]
+    },
+    "biografias": {
+      "description": "Historical biographical information for players, coaches, presidents",
+      "subdirectories": {
+        "jogadores": {
+          "format": "Markdown (.md)",
+          "naming": "historia_[player_name_lowercase].md",
+          "fields": ["nome", "posição", "período", "biografía", "estatísticas"]
+        },
+        "presidentes": {
+          "format": "Markdown (.md)",
+          "naming": "historia_[president_name_lowercase].md",
+          "fields": ["nome", "período", "biografía", "contribuições"]
+        },
+        "outras_figuras": {
+          "format": "Markdown (.md)",
+          "naming": "historia_[figure_name_lowercase].md",
+          "fields": ["nome", "papel", "período", "biografía"]
+        }
+      },
+      "rootBiographies": {
+        "description": "Individual biography files at biografias/ root",
+        "format": "Mixed (TXT, JSON)",
+        "status": "DEPRECATED - Should be consolidated"
+      }
+    },
+    "jogadores": {
+      "description": "Player registry and detailed information",
+      "format": "JSON / Markdown",
+      "structure": {
+        "fields": ["nome", "posição", "data_nascimento", "naturalidade", "altura", "peso", "número", "épocas_ativas"]
+      },
+      "subdirectories": ["por_posição", "por_época", "histórico"]
+    },
+    "outros": {
+      "description": "Miscellaneous data and historical records",
+      "subdirectories": ["treinadores", "arbitros", "curiosidades"],
+      "format": "Mixed (Markdown, JSON, Text)"
+    }
+  },
+  "fileNamingConventions": {
+    "images": {
+      "teams": "[YYYY-YY].webp (e.g., 1939-40.webp)",
+      "players": "[FirstName]_[LastName].webp",
+      "presidents": "[FirstName]_[LastName].webp"
+    },
+    "biographies": {
+      "pattern": "historia_[name_lowercase_with_underscores].md",
+      "example": "historia_joao_gralho.md"
+    },
+    "dataFiles": {
+      "pattern": "[datatype]_completos.md for primary, [datatype].txt/json for legacy",
+      "examples": [
+        "resultados_completos.md (active)",
+        "classificacoes_completas.md (active)"
+      ]
+    }
+  },
+  "dataStatus": {
+    "readyForProduction": ["resultados_completos.md", "classificacoes_completas.md", "fotografias/"],
+    "needsConsolidation": ["biografias/ (multiple formats)", "root biography files"],
+    "deprecated": ["resultados.txt", "classificacoes.txt", "individual .bak files"]
+  },
+  "accessPatterns": {
+    "byAgent": {
+      "EpocaDetalhadaAgent": ["resultados_completos.md", "classificacoes_completas.md", "fotografias/equipas/"],
+      "ResultadosAgent": ["resultados_completos.md"],
+      "JogadoresAgent": ["jogadores/", "fotografias/jogadores/"],
+      "BiografiaAgent": ["biografias/"]
+    }
+  },
+  "nextSteps": {
+    "phase2": "Consolidate biography files into unified JSON structure",
+    "phase3": "Create master index for quick lookups",
+    "phase4": "Implement relational references between collections",
+    "phase5": "Add data validation and quality checks"
+  }
+}

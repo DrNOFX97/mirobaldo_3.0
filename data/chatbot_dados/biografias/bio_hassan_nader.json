@@ -1,0 +1,146 @@
+{
+  "biografia": {
+    "nome": "Hassan Nader",
+    "nomeCompleto": "Hassan Nader",
+    "nomeArabe": "حسن ناﺿر",
+    "dataNascimento": "1965-07-08",
+    "idade": 59,
+    "localNascimento": "Casablanca, Marrocos",
+    "altura": "183 cm",
+    "posicao": "Avançado",
+
+    "carreiraJogador": [
+      {
+        "clube": "WAC Casablanca",
+        "periodo": "1982-1990",
+        "jogosGolos": "Dados não especificados"
+      },
+      {
+        "clube": "RCD Mallorca",
+        "periodo": "1990-1992",
+        "jogosGolos": "Dados não especificados"
+      },
+      {
+        "clube": "SC Farense",
+        "periodo": "1992-1995",
+        "jogosGolos": "Dados não especificados"
+      },
+      {
+        "clube": "SL Benfica",
+        "periodo": "1995-1997",
+        "jogosGolos": "Dados não especificados"
+      },
+      {
+        "clube": "SC Farense",
+        "periodo": "1997-2004",
+        "jogosGolos": "Dados não especificados"
+      }
+    ],
+
+    "carreiraTotal": {
+      "jogos": 208,
+      "golos": 116,
+      "jogosTacaPortugal": 17,
+      "golosTacaPortugal": 6
+    },
+
+    "selecaoNacional": {
+      "pais": "Marrocos",
+      "periodo": "1988-1996",
+      "destaques": [
+        "Golo inaugural no jogo da meia-final da Taça de África das Nações contra a Argélia em 1988",
+        "Um golo no Campeonato do Mundo de Futebol de 1994 nos Estados Unidos frente aos Países Baixos",
+        "Dois golos na Taça UEFA"
+      ]
+    },
+
+    "carreiraFarense": {
+      "periodos": [
+        {
+          "funcao": "Jogador",
+          "periodo": "1992-1995"
+        },
+        {
+          "funcao": "Jogador",
+          "periodo": "1997-2004"
+        },
+        {
+          "funcao": "Treinador",
+          "periodo": "2005-2006"
+        }
+      ],
+      "estreia": {
+        "data": "1992-11-01",
+        "jogo": "SC Farense-GD Chaves",
+        "competicao": "Primeira Divisão portuguesa"
+      },
+      "estatisticas": {
+        "jogos": 208,
+        "golos": 116,
+        "jogosTacaPortugal": 17,
+        "golosTacaPortugal": 6
+      },
+      "conquistas": {
+        "individuais": [
+          {
+            "titulo": "Bota de Ouro (Melhor Marcador do Campeonato Português)",
+            "temporada": "1994-1995",
+            "observacao": "Feito notável por ter sido conquistado ao serviço de um clube fora dos 'três grandes' portugueses"
+          }
+        ],
+        "coletivas": []
+      }
+    },
+
+    "conquistas": {
+      "clubes": [
+        {
+          "clube": "WAC Casablanca",
+          "titulos": [
+            "2 Campeonatos de Marrocos (1985/86 e 1989/90)",
+            "2 Taças do Rei em Marrocos (1988/89 e 1989/90)",
+            "1 Taça dos Clubes Campeões do Mundo Árabe (1988/89)",
+            "1 Supertaça Árabe (1989/90)"
+          ]
+        },
+        {
+          "clube": "RCD Mallorca",
+          "titulos": [
+            "Finalista da Taça do Rei de Espanha (1990/91)"
+          ]
+        },
+        {
+          "clube": "SL Benfica",
+          "titulos": [
+            "1 Taça de Portugal (1995/96)"
+          ]
+        }
+      ],
+      "individuais": [
+        "3 vezes melhor marcador do campeonato marroquino (1985/86, 1986/87, 1988/89)",
+        "1 Bota de Ouro de melhor marcador do campeonato português (1994/95)"
+      ]
+    },
+
+    "legadoNoFarense": [
+      "Considerado um dos maiores ídolos estrangeiros da história do clube",
+      "Representa um dos períodos mais gloriosos da história do SC Farense",
+      "Elevou significativamente o nível competitivo da equipa",
+      "Contribuiu para que o clube algarvio ganhasse respeito nacional",
+      "Regressou como treinador na época 2005/06, demonstrando a sua identificação com o clube"
+    ],
+
+    "frases": [
+      "Hassan Nader foi o maior goleador estrangeiro da história do SC Farense",
+      "A sua conquista da Bota de Ouro em 1994/95 é um dos maiores feitos individuais de um jogador do clube",
+      "Nader transformou o ataque do Farense numa das forças mais temidas do campeonato português na década de 90"
+    ],
+
+    "curiosidades": [
+      "Foi um dos poucos jogadores de clubes fora dos 'três grandes' a conquistar a artilharia do campeonato português",
+      "A sua média de golos no Farense foi superior a 0,5 por jogo, estatística impressionante para a época",
+      "Após as suas exibições no Farense, foi contratado pelo SL Benfica, um dos gigantes do futebol português",
+      "Teve duas passagens distintas pelo SC Farense, sendo que na segunda passagem permaneceu no clube durante 7 anos"
+    ]
+  }
+}

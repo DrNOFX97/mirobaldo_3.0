@@ -1,0 +1,398 @@
+[
+  {
+    "Nome":"Kaique",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/kaique\/721159",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Miguel Carvalho",
+    "Posição":"Guarda Redes",
+    "Número":"22",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-carvalho\/412426",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Ricardo Velho",
+    "Posição":"Guarda Redes",
+    "Número":"33",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-velho\/227413",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Kauan Firmino",
+    "Posição":"Guarda Redes",
+    "Número":"47",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/kauan-firmino\/693760",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Luiz Felipe",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luiz-felipe\/632611",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Lucas Cañizares",
+    "Posição":"Guarda Redes",
+    "Número":"23",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/lucas-canizares\/788445",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Pastor",
+    "Posição":"Defesa",
+    "Número":"28",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pastor\/577465",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Rivaldo Morais",
+    "Posição":"Defesa",
+    "Número":"70",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rivaldo-morais\/619887",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Marco Moreno",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marco-moreno\/593553",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Artur Jorge",
+    "Posição":"Defesa",
+    "Número":"4",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/artur-jorge\/167099",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Tomás Ribeiro",
+    "Posição":"Defesa",
+    "Número":"5",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tomas-ribeiro\/472857",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Raul Silva",
+    "Posição":"Defesa",
+    "Número":"34",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/raul-silva\/134299",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Lucas Áfrico",
+    "Posição":"Defesa",
+    "Número":"44",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/lucas-africo\/448695",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Paulo Victor",
+    "Posição":"Defesa",
+    "Número":"2",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paulo-victor\/713672",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Derick Poloni",
+    "Posição":"Defesa",
+    "Número":"31",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/derick-poloni\/382330",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Talys Oliveira",
+    "Posição":"Defesa",
+    "Número":"12",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/talys-oliveira\/710922",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Cláudio Falcão",
+    "Posição":"Médio",
+    "Número":"29",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/claudio-falcao\/391764",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Rafael Teixeira",
+    "Posição":"Médio",
+    "Número":"88",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rafael-teixeira\/610491",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Ângelo Neto",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/angelo-neto\/138107",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Zé Carlos",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ze-carlos\/450174",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Filipe Soares",
+    "Posição":"Médio",
+    "Número":"21",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/filipe-soares\/166248",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Samuel Justo",
+    "Posição":"Médio",
+    "Número":"80",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/samuel-justo\/377442",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Miguel Menino",
+    "Posição":"Médio",
+    "Número":"93",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-menino\/155236",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Jhon Velásquez",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jhon-velasquez\/494159",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Fred",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fred\/590465",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"André Seruca",
+    "Posição":"Médio",
+    "Número":"50",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-seruca\/160428",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Rafael Barbosa",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rafael-barbosa\/75299",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Geovanny Almeida",
+    "Posição":"Médio",
+    "Número":"16",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/geovanny-almeida\/478415",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Mohamed Silmi",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mohamed-silmi\/2508442",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Rony Lopes",
+    "Posição":"Avançado",
+    "Número":"20",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rony-lopes\/143936",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"André Candeias",
+    "Posição":"Avançado",
+    "Número":"41",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-candeias\/780377",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Tomané",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tomane\/133037",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Yusupha Njie",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/yusupha-njie\/495234",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Darío Poveda",
+    "Posição":"Avançado",
+    "Número":"14",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/dario-poveda\/481776",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Rui Costa",
+    "Posição":"Avançado",
+    "Número":"19",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rui-costa\/367782",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Elves Baldé",
+    "Posição":"Avançado",
+    "Número":"7",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/elves-balde\/115433",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Álex Bermejo",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alex-bermejo\/541412",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Marco Matias",
+    "Posição":"Avançado",
+    "Número":"77",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marco-matias\/34200",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Mohamed Belloumi",
+    "Posição":"Avançado",
+    "Número":"62",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mohamed-belloumi\/869133",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Jaiminho",
+    "Posição":"Avançado",
+    "Número":"71",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jaiminho\/317342",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Mehdi Merghem",
+    "Posição":"Avançado",
+    "Número":"79",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mehdi-merghem\/522489",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Cuba",
+    "Posição":"Avançado",
+    "Número":"17",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/cuba\/557255",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Álex Millán",
+    "Posição":"Avançado",
+    "Número":"19",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alex-millan\/511827",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  },
+  {
+    "Nome":"Tiago Madeira",
+    "Posição":"Avançado",
+    "Número":"20",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tiago-madeira\/553448",
+    "Época":"época_154",
+    "Clube":"SC Farense"
+  }
+]

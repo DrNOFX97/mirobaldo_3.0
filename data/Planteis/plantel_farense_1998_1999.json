@@ -1,0 +1,236 @@
+[
+  {
+    "Nome":"Candeias",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/candeias\/616",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Rosa",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-rosa\/31209",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ivo Soares",
+    "Posição":"Guarda Redes",
+    "Número":"24",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ivo-soares\/30487",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Zoran Mijanović",
+    "Posição":"Guarda Redes",
+    "Número":"27",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/zoran-mijanovic\/28835",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Eugénio",
+    "Posição":"Defesa",
+    "Número":"2",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/eugenio\/30608",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Serôdio",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-serodio\/30485",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paulo Sérgio",
+    "Posição":"Defesa",
+    "Número":"4",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paulo-sergio\/30955",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paixão",
+    "Posição":"Defesa",
+    "Número":"5",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paixao\/30486",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paulo Serrão",
+    "Posição":"Defesa",
+    "Número":"15",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paulo-serrao\/31224",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Duarte Constantino",
+    "Posição":"Defesa",
+    "Número":"16",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/duarte-constantino\/31225",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Lopes",
+    "Posição":"Defesa",
+    "Número":"19",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-lopes\/31226",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Miguel",
+    "Posição":"Defesa",
+    "Número":"26",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-miguel\/30597",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"King",
+    "Posição":"Defesa",
+    "Número":"30",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/king\/23501",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Besirovic",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/besirovic\/30874",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hajry",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hajry\/11697",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Da Silva",
+    "Posição":"Médio",
+    "Número":"11",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/da-silva\/31221",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Perry Mutapa",
+    "Posição":"Médio",
+    "Número":"14",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/perry-mutapa\/51051",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gouveia",
+    "Posição":"Médio",
+    "Número":"17",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/gouveia\/188",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlos Costa",
+    "Posição":"Médio",
+    "Número":"20",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlos-costa\/30598",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nuno Pintassilgo",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nuno-pintassilgo\/30737",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Marco Nuno",
+    "Posição":"Avançado",
+    "Número":"7",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marco-nuno\/112",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hassan Nader",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hassan-nader\/12977",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jean Paulista",
+    "Posição":"Avançado",
+    "Número":"17",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jean-paulista\/402",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ramos",
+    "Posição":"Avançado",
+    "Número":"21",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ramos\/30736",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Emir Granov",
+    "Posição":"Avançado",
+    "Número":"29",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/emir-granov\/51050",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Oliveira Pinto",
+    "Posição":"Avançado",
+    "Número":"22",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-oliveira-pinto\/30349",
+    "Época":"1998\/1999",
+    "Clube":"Farense"
+  }
+]

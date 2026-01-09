@@ -1,0 +1,253 @@
+{
+  "version": "1.0.0",
+  "generated": "2025-10-31",
+  "totalFiles": 1095,
+  "collections": {
+    "resultados": {
+      "description": "Match results and game records",
+      "files": [
+        {
+          "name": "resultados_completos.md",
+          "size": "188 KB",
+          "format": "Markdown",
+          "status": "ACTIVE",
+          "description": "Primary source of all match results from 1913-2025",
+          "usedBy": ["EpocaDetalhadaAgent", "ResultadosAgent", "epocasCompletoAgent"],
+          "lastModified": "2025-10-31",
+          "lineCount": "~4500",
+          "coverage": "1913-2025"
+        },
+        {
+          "name": "resultados_para_agente.md",
+          "size": "4.3 KB",
+          "format": "Markdown",
+          "status": "LEGACY",
+          "description": "Processed results subset for specific agent use"
+        }
+      ],
+      "totalSize": "192 KB",
+      "status": "OPTIMIZED"
+    },
+    "classificacoes": {
+      "description": "League standings and season classifications",
+      "files": [
+        {
+          "name": "classificacoes_completas.md",
+          "size": "83 KB",
+          "format": "Markdown",
+          "status": "ACTIVE",
+          "description": "Primary source of all final standings by season",
+          "usedBy": ["EpocaDetalhadaAgent", "epocasCompletoAgent"],
+          "lastModified": "2025-10-30",
+          "coverage": "1913-2025"
+        },
+        {
+          "name": "classificacoes_essenciais.md",
+          "size": "1.1 KB",
+          "format": "Markdown",
+          "status": "REFERENCE",
+          "description": "Summary of essential seasons only"
+        },
+        {
+          "name": "classificacoes_para_agente.md",
+          "size": "6.9 KB",
+          "format": "Markdown",
+          "status": "LEGACY",
+          "description": "Agent-specific formatted version"
+        }
+      ],
+      "totalSize": "91 KB",
+      "status": "ACTIVE_WITH_BACKUPS"
+    },
+    "fotografias": {
+      "description": "Image assets (team photos, player photos, president portraits)",
+      "subdirectories": {
+        "equipas": {
+          "description": "Team squad photos by season",
+          "fileCount": 16,
+          "formats": ["webp", "png"],
+          "totalSize": "~450 MB",
+          "examples": [
+            "1939-40.webp",
+            "1990-91.webp",
+            "2024-25.webp"
+          ]
+        },
+        "jogadores": {
+          "description": "Individual player photographs",
+          "fileCount": 32,
+          "formats": ["webp", "png"],
+          "totalSize": "~250 MB",
+          "examples": [
+            "Antonio_Gago.webp",
+            "Hassan_Nader.webp"
+          ]
+        },
+        "presidentes": {
+          "description": "Club president and board member portraits",
+          "fileCount": 3,
+          "formats": ["webp", "png"],
+          "totalSize": "~50 MB",
+          "examples": [
+            "Francisco_Tavares_Bello.webp"
+          ]
+        }
+      },
+      "totalFiles": 51,
+      "totalSize": "~750 MB",
+      "status": "COMPLETE_AND_SYNCED"
+    },
+    "biografias": {
+      "description": "Historical biographical information - NEEDS CONSOLIDATION",
+      "rootFiles": {
+        "bio_antonio_gago.txt": {
+          "size": "4.7 KB",
+          "format": "Text",
+          "status": "DEPRECATED",
+          "note": "Should be merged into jogadores/ directory"
+        },
+        "bio_hassan_nader.json": {
+          "size": "4.5 KB",
+          "format": "JSON",
+          "status": "DEPRECATED",
+          "note": "Should be consolidated into unified format"
+        },
+        "bio_joao_gralho.txt": {
+          "size": "5.5 KB",
+          "format": "Text",
+          "status": "DEPRECATED"
+        }
+      },
+      "subdirectories": {
+        "jogadores": {
+          "description": "Player biographical files",
+          "fileCount": 150,
+          "format": "Markdown (.md)",
+          "namingPattern": "historia_[player_name_lowercase].md",
+          "examples": [
+            "historia_joao_gralho.md",
+            "historia_hassan_nader.md",
+            "historia_adelmiro.md"
+          ],
+          "duplicates": [
+            "bio_antonio_gago_formatado.md (duplicate of historia_antonio_gago.md)"
+          ]
+        },
+        "presidentes": {
+          "description": "Club president biographies",
+          "fileCount": 2,
+          "format": "Markdown (.md)",
+          "examples": [
+            "historia_francisco_tavares_bello.md"
+          ]
+        },
+        "outras_figuras": {
+          "description": "Other historical figures and contributors",
+          "fileCount": 1,
+          "format": "Markdown (.md)",
+          "examples": [
+            "historia_miguel_cruz.md"
+          ]
+        }
+      },
+      "totalFiles": 153,
+      "totalSize": "~1.2 MB",
+      "status": "NEEDS_CONSOLIDATION",
+      "issues": [
+        "Multiple formats (TXT, JSON, MD)",
+        "Root files should be moved to subdirectories",
+        "Duplicate entries in different formats",
+        "Inconsistent naming conventions"
+      ]
+    },
+    "jogadores": {
+      "description": "Player registry and comprehensive information",
+      "fileCount": 50,
+      "format": "Mixed (JSON, Markdown)",
+      "subdirectories": [
+        "por_posição",
+        "por_época",
+        "histórico"
+      ],
+      "status": "PARTIALLY_ORGANIZED"
+    },
+    "outros": {
+      "description": "Miscellaneous historical and reference data",
+      "subdirectories": {
+        "treinadores": {
+          "description": "Coach and manager information",
+          "status": "MINIMAL"
+        },
+        "arbitros": {
+          "description": "Referees and officials data",
+          "status": "MINIMAL"
+        },
+        "curiosidades": {
+          "description": "Historical facts and trivia",
+          "status": "MINIMAL"
+        }
+      },
+      "totalFiles": 15,
+      "status": "SPARSE"
+    },
+    "historia": {
+      "description": "Extended historical records",
+      "fileCount": 8,
+      "format": "Markdown, JSON",
+      "status": "BASIC"
+    }
+  },
+  "cleanupCompleted": {
+    "timestamp": "2025-10-31",
+    "actions": [
+      {
+        "action": "Deleted backup files",
+        "files": [
+          "resultados/resultados_completos.md.bak",
+          "classificacoes/classificacoes_completas.md.bak"
+        ]
+      },
+      {
+        "action": "Deleted redundant formats",
+        "files": [
+          "resultados/resultados.txt (135 KB) - superseded by .md format",
+          "classificacoes/classificacoes.txt (53 KB) - superseded by .md format"
+        ]
+      },
+      {
+        "action": "Removed system files",
+        "files": [".DS_Store instances"]
+      },
+      {
+        "action": "Photo synchronization",
+        "description": "Synced all 51 photos from public/ to dados/ as single source of truth"
+      }
+    ]
+  },
+  "recommendations": {
+    "immediate": [
+      "Consolidate biography files: move root .txt/.json files into appropriate subdirectories",
+      "Remove duplicate biography files (e.g., bio_*_formatado.md versions)",
+      "Standardize all biography format to Markdown"
+    ],
+    "shortTerm": [
+      "Create unified biography JSON index for quick lookup",
+      "Implement automated validation for file naming conventions",
+      "Create master player index linking all related data"
+    ],
+    "longTerm": [
+      "Migrate to structured database for dynamic queries",
+      "Implement caching layer for frequently accessed data",
+      "Create REST API for data access"
+    ]
+  },
+  "statistics": {
+    "totalDataSize": "~752 MB",
+    "activeFiles": 48,
+    "legacyFiles": 12,
+    "redundantFiles": 5,
+    "imageFiles": 51,
+    "textDataFiles": 1000,
+    "dataQuality": "80% (before consolidation)"
+  }
+}

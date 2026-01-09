@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦁 Farense Chatbot</title>
+    <link rel="stylesheet" href="static/tables.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f0f;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            border-bottom: 3px solid #333;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+        }
+
+        .chat-header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 2rem;
+            background: #1a1a1a;
+        }
+
+        .message {
+            margin-bottom: 1.5rem;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .message-user {
+            background: #2563eb;
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 18px;
+            max-width: 70%;
+            margin-left: auto;
+            word-wrap: break-word;
+        }
+
+        .message-bot {
+            background: #262626;
+            color: #e5e5e5;
+            padding: 1.5rem;
+            border-radius: 18px;
+            max-width: 85%;
+            border: 1px solid #333;
+        }
+
+        .message-bot pre {
+            white-space: pre-wrap;
+            font-family: inherit;
+            line-height: 1.6;
+        }
+
+        .html-content {
+            line-height: 1.6;
+        }
+
+        .html-content h2,
+        .html-content h3 {
+            margin: 1rem 0 0.5rem 0;
+            color: #e5e5e5;
+        }
+
+        .html-content p {
+            margin: 0.5rem 0;
+        }
+
+        .agent-badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .error-message {
+            background: #dc2626;
+            color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+        }
+
+        .metadata {
+            font-size: 0.75rem;
+            color: #888;
+            margin-top: 0.5rem;
+            padding-top: 0.5rem;
+            border-top: 1px solid #333;
+        }
+
+        .input-container {
+            background: #1a1a1a;
+            padding: 1.5rem 2rem;
+            border-top: 1px solid #333;
+        }
+
+        .input-wrapper {
+            display: flex;
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #userInput {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: 2px solid #333;
+            border-radius: 24px;
+            background: #262626;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        #userInput:focus {
+            border-color: #2563eb;
+        }
+
+        #sendBtn {
+            padding: 1rem 2rem;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #sendBtn:hover:not(:disabled) {
+            background: #1d4ed8;
+        }
+
+        #sendBtn:disabled {
+            background: #444;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #2563eb;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .photo-container {
+            margin: 1rem 0;
+        }
+
+        .photo-container img {
+            max-width: 200px;
+            border-radius: 8px;
+            border: 2px solid #333;
+        }
+
+        /* Tables from static/tables.css will be applied */
+    </style>
+</head>
+<body>
+    <div class="chat-header">
+        <h1>🦁 Farense Chatbot - Sistema Híbrido Avançado</h1>
+        <div style="font-size: 0.85rem; opacity: 0.8; margin-top: 0.5rem;">
+            3 Agentes Especializados • RAG Adaptativo • Cross-Encoder Re-ranking • M1 Optimized
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="messages" id="messages"></div>
+
+        <div class="input-container">
+            <div class="input-wrapper">
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Pergunta sobre o Farense... (ex: quem foi paco fortes?)"
+                    autocomplete="off"
+                >
+                <button id="sendBtn">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = 'http://localhost:5003/api/chat';
+        const messagesDiv = document.getElementById('messages');
+        const userInput = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+
+        // Mensagem de boas-vindas
+        addBotMessage(`Olá! Sou o assistente virtual do Sporting Clube Farense. 🦁⚽
+
+Posso ajudar-te com:
+• Biografias de jogadores (ex: "quem foi paco fortes?")
+• Resultados de jogos (ex: "resultados época 2023/24")
+• Classificações (ex: "classificação 1ª liga")
+• História do clube
+
+Faz a tua pergunta!`);
+
+        // Event listeners
+        sendBtn.addEventListener('click', sendMessage);
+        userInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        async function sendMessage() {
+            const query = userInput.value.trim();
+            if (!query) return;
+
+            // Add user message
+            addUserMessage(query);
+            userInput.value = '';
+
+            // Disable input
+            sendBtn.disabled = true;
+            sendBtn.textContent = 'A processar...';
+
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({query: query})
+                });
+
+                const data = await response.json();
+
+                if (data.success) {
+                    addBotMessage(data.response, {
+                        agent: data.agent,
+                        photos: data.photos,
+                        metadata: data.metadata
+                    });
+                } else {
+                    addErrorMessage(data.error || 'Erro desconhecido');
+                }
+            } catch (error) {
+                addErrorMessage('Erro de conexão: ' + error.message);
+            } finally {
+                sendBtn.disabled = false;
+                sendBtn.textContent = 'Enviar';
+            }
+        }
+
+        function addUserMessage(text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'message';
+            msgDiv.innerHTML = `<div class="message-user">${escapeHtml(text)}</div>`;
+            messagesDiv.appendChild(msgDiv);
+            scrollToBottom();
+        }
+
+        function addBotMessage(text, options = {}) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'message';
+
+            let html = '<div class="message-bot">';
+
+            // Agent badge
+            if (options.agent) {
+                const agentLabels = {
+                    'biography': '👤 Biografia',
+                    'results': '⚽ Resultados',
+                    'classification': '📊 Classificação'
+                };
+                html += `<div class="agent-badge">${agentLabels[options.agent] || options.agent}</div>`;
+            }
+
+            // Photos
+            if (options.photos && options.photos.length > 0) {
+                html += '<div class="photo-container">';
+                options.photos.forEach(photo => {
+                    const photoPath = photo.startsWith('/') ? photo.substring(1) : photo;
+                    html += `<img src="${photoPath}" alt="Foto" onerror="this.style.display='none'">`;
+                });
+                html += '</div>';
+            }
+
+            // Main content
+            // Se o texto contém HTML (tabelas), renderizar diretamente
+            if (text.includes('<table') || text.includes('<h2') || text.includes('<h3')) {
+                html += `<div class="html-content">${text}</div>`;
+            } else {
+                // Caso contrário, escapar HTML e usar <pre>
+                html += `<pre>${escapeHtml(text)}</pre>`;
+            }
+
+            // Metadata
+            if (options.metadata) {
+                const m = options.metadata;
+                html += '<div class="metadata">';
+                if (m.total_latency_ms) html += `⏱️ ${m.total_latency_ms}ms `;
+                if (m.docs_retrieved) html += `📄 ${m.docs_after_filter || 0}/${m.docs_retrieved} docs `;
+                if (m.rag_method) html += `🔍 ${m.rag_method}`;
+                html += '</div>';
+            }
+
+            html += '</div>';
+            msgDiv.innerHTML = html;
+            messagesDiv.appendChild(msgDiv);
+            scrollToBottom();
+        }
+
+        function addErrorMessage(text) {
+            const msgDiv = document.createElement('div');
+            msgDiv.className = 'message';
+            msgDiv.innerHTML = `<div class="message-bot"><div class="error-message">❌ ${escapeHtml(text)}</div></div>`;
+            messagesDiv.appendChild(msgDiv);
+            scrollToBottom();
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function scrollToBottom() {
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    </script>
+</body>
+</html>

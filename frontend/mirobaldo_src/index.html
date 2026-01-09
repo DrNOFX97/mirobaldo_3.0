@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirobaldo - Assistente do SC Farense</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Söhne:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-primary: #ECECF1;
+            --text-secondary: #c5c5d2;
+            --text-tertiary: #8e8ea0;
+            --surface-primary: #343541;
+            --surface-secondary: #444654;
+            --surface-tertiary: #40414F;
+            --surface-quaternary: #202123;
+            --border-light: rgba(255, 255, 255, 0.2);
+            --border-heavy: #4E4F60;
+            --green-primary: #4CAF50;
+            --green-secondary: #3d8b40;
+            --scrollbar-thumb: #565869;
+            --scrollbar-track: #2A2B32;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Söhne', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: var(--surface-primary);
+            color: var(--text-primary);
+            line-height: 1.5;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .app {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Sidebar */
+        .nav-sidebar {
+            width: 260px;
+            background-color: var(--surface-quaternary);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: width 0.15s ease, transform 0.15s ease;
+            z-index: 200;
+        }
+
+        .nav-sidebar-header {
+            padding: 8px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .new-chat-button {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid var(--border-light);
+            background-color: transparent;
+            color: var(--text-primary);
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .new-chat-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-sidebar-content {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px;
+        }
+
+        .nav-sidebar-footer {
+            padding: 8px;
+            border-top: 1px solid var(--border-light);
+        }
+
+        .user-menu-button {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
+            border: none;
+            background-color: transparent;
+            color: var(--text-primary);
+            font-size: 14px;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .user-menu-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .user-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background-color: var(--green-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            color: white;
+        }
+
+        .user-name {
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .conversation-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .conversation-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .conversation-item:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .conversation-item.active {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+        }
+
+        /* Main Content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .main-header {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            border-bottom: 1px solid var(--border-heavy);
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: var(--text-primary);
+            font-size: 16px;
+            cursor: pointer;
+            display: none;
+            margin-right: 16px;
+        }
+
+        .main-title {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .main-content {
+            flex: 1;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        /* Welcome Screen */
+        .welcome-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .welcome-logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 20px;
+            background-color: var(--green-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .welcome-title {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            background: linear-gradient(to right, var(--green-primary), #8BC34A);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .welcome-subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin-bottom: 32px;
+        }
+
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .example-card {
+            background-color: var(--surface-quaternary);
+            border-radius: 8px;
+            padding: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            text-align: left;
+        }
+
+        .example-card:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .example-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .example-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        /* Chat Messages */
+        .chat-messages {
+            display: none;
+        }
+
+        .message-row {
+            padding: 24px 16px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid var(--border-heavy);
+        }
+
+        .message-row.user {
+            background-color: var(--surface-secondary);
+        }
+
+        .message-row.assistant {
+            background-color: var(--surface-primary);
+        }
+
+        .message-container {
+            display: flex;
+            gap: 16px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .message-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            flex-shrink: 0;
+        }
+
+        .message-avatar.user {
+            background-color: #5436DA;
+            color: white;
+        }
+
+        .message-avatar.assistant {
+            background-color: var(--green-primary);
+            color: white;
+        }
+
+        .message-content {
+            flex: 1;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .message-content p {
+            margin-bottom: 16px;
+        }
+
+        .message-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .message-content pre {
+            background-color: var(--surface-quaternary);
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+
+        .message-content code {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            font-size: 14px;
+        }
+
+        /* Input Area */
+        .input-area {
+            padding: 24px 16px;
+            display: flex;
+            justify-content: center;
+            border-top: 1px solid var(--border-heavy);
+            background-color: var(--surface-primary);
+            position: relative;
+        }
+
+        .input-container {
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+        }
+
+        .chat-input {
+            width: 100%;
+            padding: 14px 48px 14px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--border-heavy);
+            background-color: var(--surface-tertiary);
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 16px;
+            resize: none;
+            height: 52px;
+            max-height: 200px;
+            overflow-y: auto;
+            transition: border-color 0.2s;
+        }
+
+        .chat-input:focus {
+            outline: none;
+            border-color: var(--green-primary);
+            box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+        }
+
+        .send-button {
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+            background-color: transparent;
+            border: none;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 4px;
+            transition: color 0.2s, background-color 0.2s;
+        }
+
+        .send-button:hover {
+            color: var(--green-primary);
+            background-color: rgba(76, 175, 80, 0.1);
+        }
+
+        .send-button:disabled {
+            color: var(--border-heavy);
+            cursor: not-allowed;
+            background-color: transparent;
+        }
+
+        .input-footer {
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--text-tertiary);
+            text-align: center;
+        }
+
+        /* Typing Indicator */
+        .typing-indicator {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .typing-dot {
+            width: 4px;
+            height: 4px;
+            background-color: var(--text-secondary);
+            border-radius: 50%;
+            animation: typingAnimation 1.4s infinite ease-in-out;
+        }
+
+        .typing-dot:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .typing-dot:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-dot:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typingAnimation {
+            0%, 60%, 100% {
+                transform: translateY(0);
+                opacity: 0.6;
+            }
+            30% {
+                transform: translateY(-4px);
+                opacity: 1;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--scrollbar-track);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--scrollbar-thumb);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #777;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .nav-sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                transform: translateX(-100%);
+                height: 100%;
+                z-index: 1000;
+            }
+
+            .nav-sidebar.open {
+                transform: translateX(0);
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .examples-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Overlay for mobile sidebar */
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 100;
+            display: none;
+        }
+
+        .sidebar-overlay.open {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <div class="nav-sidebar" id="sidebar">
+            <div class="nav-sidebar-header">
+                <button class="new-chat-button" id="new-chat-button">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4V20M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Nova conversa
+                </button>
+            </div>
+            <div class="nav-sidebar-content">
+                <div class="conversation-list" id="conversation-list">
+                    <div class="conversation-item active" data-agent="geral">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 13.4876 3.36093 14.891 4 16.1272L3 21L7.8728 20C9.10904 20.6391 10.5124 21 12 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Mirobaldo Geral</span>
+                    </div>
+                    <div class="conversation-item" data-agent="resultados" data-query="resultados">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 5H5V7H19V5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 11H5V13H19V11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 17H5V19H19V17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Últimos Resultados</span>
+                    </div>
+                    <div class="conversation-item" data-agent="proximos" data-query="próximos jogos">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 7V3M16 7V3M7 11H17M5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Próximos Jogos</span>
+                    </div>
+                    <div class="conversation-item" data-agent="classificacao" data-query="classificação">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 10H21M3 14H21M3 18H21M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Classificação da Liga</span>
+                    </div>
+                    <div class="conversation-item" data-agent="historia" data-query="história do SC Farense">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>História do Clube</span>
+                    </div>
+                    <div class="conversation-item" data-agent="antonio-gago" data-query="quem foi António Gago?">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.5 4.5C15.8 4.5 14.35 5.94 14.35 7.75C14.35 9.56 15.8 11 17.5 11C19.2 11 20.65 9.56 20.65 7.75C20.65 5.94 19.2 4.5 17.5 4.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 14H21V19C21 19.55 20.55 20 20 20H15C14.45 20 14 19.55 14 19V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M6.5 5.5C4.8 5.5 3.35 6.94 3.35 8.75C3.35 10.56 4.8 12 6.5 12C8.2 12 9.65 10.56 9.65 8.75C9.65 6.94 8.2 5.5 6.5 5.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 15H10V20C10 20.55 9.55 21 9 21H4C3.45 21 3 20.55 3 20V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>António Gago</span>
+                    </div>
+                    <div class="conversation-item" data-agent="proxima-deslocacao" data-query="próxima deslocação">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 17L15 12L9 7V17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 12C3 16.9706 7.02944 21 12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Próxima Deslocação</span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-sidebar-footer">
+                <button class="user-menu-button">
+                    <div class="user-avatar">A</div>
+                    <div class="user-name">Adepto do Farense</div>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19 13C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11C18.4477 11 18 11.4477 18 12C18 12.5523 18.4477 13 19 13Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 13C5.55228 13 6 12.5523 6 12C6 11.4477 5.55228 11 5 11C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13Z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sidebar Overlay -->
+        <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+        <!-- Main Content -->
+        <div class="main">
+            <div class="main-header">
+                <button class="menu-toggle" id="menu-toggle">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="main-title">Mirobaldo - Assistente do SC Farense</div>
+            </div>
+            <div class="main-content">
+                <!-- Welcome Screen -->
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="welcome-logo">M</div>
+                    <h1 class="welcome-title">Mirobaldo</h1>
+                    <p class="welcome-subtitle">O assistente virtual do SC Farense. Pergunte sobre resultados, próximos jogos, classificação, história do clube e muito mais!</p>
+                    <div class="examples-grid">
+                        <div class="example-card" onclick="setInput('Quais foram os últimos resultados do SC Farense?')">
+                            <div class="example-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8V12L15 15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Últimos resultados
+                            </div>
+                            <div class="example-text">Quais foram os últimos resultados do SC Farense?</div>
+                        </div>
+                        <div class="example-card" onclick="setInput('Quando é o próximo jogo do Farense?')">
+                            <div class="example-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 7V3M16 7V3M7 11H17M5 21H19C20.1046 21 21 20.1046 21 19V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V19C3 20.1046 3.89543 21 5 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Próximos jogos
+                            </div>
+                            <div class="example-text">Quando é o próximo jogo do Farense?</div>
+                        </div>
+                        <div class="example-card" onclick="setInput('Qual é a classificação atual do Farense na liga?')">
+                            <div class="example-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 10H21M3 14H21M3 18H21M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Classificação
+                            </div>
+                            <div class="example-text">Qual é a classificação atual do Farense na liga?</div>
+                        </div>
+                        <div class="example-card" onclick="setInput('Quem foi António Gago?')">
+                            <div class="example-title">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                História
+                            </div>
+                            <div class="example-text">Quem foi António Gago?</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chat Messages -->
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will be added here -->
+                </div>
+            </div>
+            <div class="input-area">
+                <div class="input-container">
+                    <textarea id="chat-input" class="chat-input" placeholder="Envie uma mensagem..." rows="1"></textarea>
+                    <button id="send-button" class="send-button" disabled>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    O Mirobaldo está em fase de desenvolvimento e pode cometer erros.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebar-overlay');
+        const menuToggle = document.getElementById('menu-toggle');
+        const newChatButton = document.getElementById('new-chat-button');
+        const chatInput = document.getElementById('chat-input');
+        const sendButton = document.getElementById('send-button');
+        const welcomeScreen = document.getElementById('welcome-screen');
+        const chatMessages = document.getElementById('chat-messages');
+        const conversationItems = document.querySelectorAll('.conversation-item');
+
+        // Toggle sidebar on mobile
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.add('open');
+            sidebarOverlay.classList.add('open');
+        });
+
+        sidebarOverlay.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+
+        // Auto-resize textarea
+        chatInput.addEventListener('input', function() {
+            this.style.height = 'auto';
+            this.style.height = (this.scrollHeight) + 'px';
+            
+            // Enable/disable send button based on input
+            sendButton.disabled = this.value.trim() === '';
+        });
+
+        // Handle Enter key
+        chatInput.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                if (this.value.trim() !== '') {
+                    sendMessage();
+                }
+            }
+        });
+
+        // Send message when button is clicked
+        sendButton.addEventListener('click', sendMessage);
+
+        // New chat button
+        newChatButton.addEventListener('click', () => {
+            // Clear chat messages
+            chatMessages.innerHTML = '';
+            chatMessages.style.display = 'none';
+            welcomeScreen.style.display = 'flex';
+            
+            // Update active conversation
+            conversationItems.forEach(item => {
+                item.classList.remove('active');
+            });
+            conversationItems[0].classList.add('active');
+            
+            // Close sidebar on mobile
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        });
+
+        // Conversation items
+        conversationItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Update active conversation
+                conversationItems.forEach(i => {
+                    i.classList.remove('active');
+                });
+                item.classList.add('active');
+                
+                // Close sidebar on mobile
+                sidebar.classList.remove('open');
+                sidebarOverlay.classList.remove('open');
+                
+                // Check if this item has a query to send
+                const query = item.getAttribute('data-query');
+                if (query) {
+                    // Send the query directly
+                    sendDirectQuery(query);
+                }
+            });
+        });
+
+        // Set input from example
+        function setInput(example) {
+            chatInput.value = example;
+            chatInput.style.height = 'auto';
+            chatInput.style.height = (chatInput.scrollHeight) + 'px';
+            sendButton.disabled = false;
+            sendMessage();
+        }
+
+        // Send message
+        function sendMessage() {
+            const message = chatInput.value.trim();
+            if (message === '') return;
+
+            // Hide welcome screen and show chat messages
+            welcomeScreen.style.display = 'none';
+            chatMessages.style.display = 'block';
+
+            // Add user message to chat
+            addUserMessage(message);
+
+            // Clear input and reset height
+            chatInput.value = '';
+            chatInput.style.height = '52px';
+            sendButton.disabled = true;
+
+            // Add bot message with typing indicator
+            const botMessageRow = document.createElement('div');
+            botMessageRow.className = 'message-row assistant';
+            
+            const botMessageContainer = document.createElement('div');
+            botMessageContainer.className = 'message-container';
+            
+            const botAvatar = document.createElement('div');
+            botAvatar.className = 'message-avatar assistant';
+            botAvatar.textContent = 'M';
+            
+            const botContent = document.createElement('div');
+            botContent.className = 'message-content';
+            
+            // Add typing indicator
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'typing-indicator';
+            for (let i = 0; i < 3; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'typing-dot';
+                typingIndicator.appendChild(dot);
+            }
+            
+            botContent.appendChild(typingIndicator);
+            botMessageContainer.appendChild(botAvatar);
+            botMessageContainer.appendChild(botContent);
+            botMessageRow.appendChild(botMessageContainer);
+            chatMessages.appendChild(botMessageRow);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Send message to backend
+            fetch('/api/chatbot', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ message: message })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro na resposta do servidor: ' + response.status);
+                }
+                
+                // Remove typing indicator
+                botContent.innerHTML = '';
+                
+                // Set up streaming response handling
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let buffer = '';
+                
+                function processStream({ done, value }) {
+                    if (done) {
+                        // Process any remaining buffer
+                        if (buffer.trim()) {
+                            try {
+                                const data = JSON.parse(buffer);
+                                appendToMessage(botContent, data.message);
+                            } catch (e) {
+                                console.error('Erro ao processar buffer final:', e);
+                            }
+                        }
+                        return;
+                    }
+                    
+                    // Decode the chunk and add to buffer
+                    const chunk = decoder.decode(value, { stream: true });
+                    buffer += chunk;
+                    
+                    // Process complete JSON objects
+                    let newlineIndex;
+                    while ((newlineIndex = buffer.indexOf('\n')) !== -1) {
+                        const line = buffer.slice(0, newlineIndex).trim();
+                        buffer = buffer.slice(newlineIndex + 1);
+                        
+                        if (line) {
+                            try {
+                                const data = JSON.parse(line);
+                                appendToMessage(botContent, data.message);
+                            } catch (e) {
+                                console.error('Erro ao processar linha:', e, line);
+                            }
+                        }
+                    }
+                    
+                    // Continue reading
+                    reader.read().then(processStream);
+                }
+                
+                // Start reading the stream
+                reader.read().then(processStream);
+            })
+            .catch(error => {
+                console.error('Erro na comunicação com o servidor:', error);
+                
+                // Remove typing indicator and show error
+                botContent.innerHTML = '';
+                botContent.textContent = 'Desculpe, ocorreu um erro ao processar sua mensagem. Por favor, tente novamente.';
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            });
+        }
+
+        // Add user message to chat
+        function addUserMessage(text) {
+            const messageRow = document.createElement('div');
+            messageRow.className = 'message-row user';
+            
+            const messageContainer = document.createElement('div');
+            messageContainer.className = 'message-container';
+            
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar user';
+            avatar.textContent = 'A';
+            
+            const content = document.createElement('div');
+            content.className = 'message-content';
+            content.textContent = text;
+            
+            messageContainer.appendChild(avatar);
+            messageContainer.appendChild(content);
+            messageRow.appendChild(messageContainer);
+            chatMessages.appendChild(messageRow);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Append text to message with formatting
+        function appendToMessage(element, text) {
+            // Format text (bold, italic, code)
+            const formattedText = text
+                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                .replace(/`(.*?)`/g, '<code>$1</code>')
+                .replace(/\n/g, '<br>');
+            
+            // Append to element
+            element.innerHTML += formattedText;
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        // Function to send a direct query without user input
+        function sendDirectQuery(query) {
+            // Hide welcome screen and show chat messages
+            welcomeScreen.style.display = 'none';
+            chatMessages.style.display = 'block';
+
+            // Add user message to chat
+            addUserMessage(query);
+
+            // Add bot message with typing indicator
+            const botMessageRow = document.createElement('div');
+            botMessageRow.className = 'message-row assistant';
+            
+            const botMessageContainer = document.createElement('div');
+            botMessageContainer.className = 'message-container';
+            
+            const botAvatar = document.createElement('div');
+            botAvatar.className = 'message-avatar assistant';
+            botAvatar.textContent = 'M';
+            
+            const botContent = document.createElement('div');
+            botContent.className = 'message-content';
+            
+            // Add typing indicator
+            const typingIndicator = document.createElement('div');
+            typingIndicator.className = 'typing-indicator';
+            for (let i = 0; i < 3; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'typing-dot';
+                typingIndicator.appendChild(dot);
+            }
+            
+            botContent.appendChild(typingIndicator);
+            botMessageContainer.appendChild(botAvatar);
+            botMessageContainer.appendChild(botContent);
+            botMessageRow.appendChild(botMessageContainer);
+            chatMessages.appendChild(botMessageRow);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+
+            // Check if we need to use a specific API endpoint based on the query
+            let apiEndpoint = '/api/chatbot';
+            let requestBody = { message: query };
+            let method = 'POST';
+            
+            // Map specific queries to their dedicated endpoints
+            const queryEndpoints = {
+                'resultados': '/api/last_matches',
+                'próximos jogos': '/api/next_matches',
+                'classificação': '/api/classification',
+                'próxima deslocação': '/api/next_away_game',
+                'quem foi António Gago?': '/api/biography/antonio_gago'
+            };
+            
+            // Check if we have a dedicated endpoint for this query
+            if (queryEndpoints[query]) {
+                apiEndpoint = queryEndpoints[query];
+                // For these endpoints, we use GET method and don't need to send a message body
+                method = 'GET';
+                requestBody = {};
+            }
+            
+            // Send request to the appropriate endpoint
+            fetch(apiEndpoint, {
+                method: method,
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: method === 'POST' ? JSON.stringify(requestBody) : undefined
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro na resposta do servidor: ' + response.status);
+                }
+                
+                // Remove typing indicator
+                botContent.innerHTML = '';
+                
+                // Handle the response based on the endpoint
+                if (apiEndpoint !== '/api/chatbot') {
+                    // For dedicated endpoints, we expect a direct JSON response
+                    return response.json().then(data => {
+                        // Format the response based on the endpoint
+                        let formattedResponse = '';
+                        
+                        if (apiEndpoint === '/api/last_matches') {
+                            formattedResponse = '**Últimos Resultados do SC Farense:**\n\n' + data.last_matches;
+                        } else if (apiEndpoint === '/api/next_matches') {
+                            formattedResponse = '**Próximos Jogos do SC Farense:**\n\n' + data.next_matches;
+                        } else if (apiEndpoint === '/api/classification') {
+                            formattedResponse = '**Classificação Atual:**\n\n' + data.classification;
+                        } else if (apiEndpoint === '/api/next_away_game') {
+                            formattedResponse = '**Próxima Deslocação:**\n\n' + data.away_game;
+                        } else if (apiEndpoint === '/api/biography/antonio_gago') {
+                            const bio = data;
+                            formattedResponse = `**${bio.nome}**\n\n${bio.biografia}\n\n**Nascimento:** ${bio.nascimento}\n**Falecimento:** ${bio.falecimento}\n**Função:** ${bio.funcao}`;
+                        }
+                        
+                        // Display the formatted response
+                        appendToMessage(botContent, formattedResponse);
+                    });
+                }
+                
+                // For the chatbot endpoint, handle streaming response
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let buffer = '';
+                
+                function processStream({ done, value }) {
+                    if (done) {
+                        // Process any remaining buffer
+                        if (buffer.trim()) {
+                            try {
+                                const data = JSON.parse(buffer);
+                                appendToMessage(botContent, data.message);
+                            } catch (e) {
+                                console.error('Erro ao processar buffer final:', e);
+                            }
+                        }
+                        return;
+                    }
+                    
+                    // Decode the chunk and add to buffer
+                    const chunk = decoder.decode(value, { stream: true });
+                    buffer += chunk;
+                    
+                    // Process complete JSON objects
+                    let newlineIndex;
+                    while ((newlineIndex = buffer.indexOf('\n')) !== -1) {
+                        const line = buffer.slice(0, newlineIndex).trim();
+                        buffer = buffer.slice(newlineIndex + 1);
+                        
+                        if (line) {
+                            try {
+                                const data = JSON.parse(line);
+                                appendToMessage(botContent, data.message);
+                            } catch (e) {
+                                console.error('Erro ao processar linha:', e, line);
+                            }
+                        }
+                    }
+                    
+                    // Continue reading
+                    reader.read().then(processStream);
+                }
+                
+                // Start reading the stream
+                return reader.read().then(processStream);
+            })
+            .catch(error => {
+                console.error('Erro na comunicação com o servidor:', error);
+                
+                // Remove typing indicator and show error
+                botContent.innerHTML = '';
+                botContent.textContent = 'Desculpe, ocorreu um erro ao processar sua solicitação. Por favor, tente novamente.';
+                
+                // Scroll to bottom
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            });
+        }
+    </script>
+</body>
+</html>

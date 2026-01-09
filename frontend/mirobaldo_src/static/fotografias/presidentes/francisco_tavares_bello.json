@@ -1,0 +1,37 @@
+{
+  "name": "Francisco Tavares Bello",
+  "title": "Fundador, Presidente e Impulsionador do Desporto Farense",
+  "period": "1905-1950s",
+  "roles": [
+    "Co-fundador do Sporting Clube Farense (1910)",
+    "Presidente (1914)",
+    "Presidente da Associação de Futebol do Algarve",
+    "Cronometrista (1922)",
+    "Colaborador do jornal Sul Desportivo"
+  ],
+  "photograph": {
+    "filename": "Francisco Tavares Bello.png",
+    "type": "portrait_formal",
+    "era": "early_20th_century",
+    "description": "Retrato formal em preto e branco, mostrando um homem com barba espessa, vestuário formal (fato escuro com gravata borboleta branca) e expressão séria e determinada, típica de um líder respeitado do desporto farense",
+    "characteristics": [
+      "Barba espessa e bem cuidada",
+      "Expressão séria e determinada",
+      "Vestuário formal - fato e gravata borboleta",
+      "Presença impositiva"
+    ]
+  },
+  "biographical_summary": "Francisco R. Tavares Bello foi uma das figuras mais importantes na história inicial do Sporting Clube Farense e do desporto algarvio, sendo simultaneamente fundador, presidente, colaborador incansável e impulsionador do desenvolvimento organizacional do futebol na região.",
+  "key_dates": {
+    "1905": "Começa a jogar futebol no Largo da Sé",
+    "1910": "Fundação do Sporting Clube Farense (membro fundador)",
+    "1914": "Nomeado presidente do Sporting Clube Farense",
+    "1921": "Participa na reorganização da Associação de Futebol do Algarve",
+    "1922": "Cronometrista na final do Primeiro Campeonato do Algarve"
+  },
+  "related_files": {
+    "biography": "../../../biografias/presidentes/historia_francisco_tavares_bello.md",
+    "source_document": "50 Anos de História do Futebol em Faro (1900-1950) - Raminhos Bispo (2008)"
+  },
+  "source": "Arquivo histórico do Sporting Clube Farense"
+}

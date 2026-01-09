@@ -1,0 +1,227 @@
+[
+  {
+    "Nome":"Serrão",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"36 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/serrao\/8848",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Diogo Freitas",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/diogo-freitas\/160717",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gonçalo",
+    "Posição":"Guarda Redes",
+    "Número":"24",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/goncalo\/146070",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Bernardo",
+    "Posição":"Defesa",
+    "Número":"2",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-bernardo\/170433",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tiago Sousa",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tiago-sousa\/8816",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Caniggia",
+    "Posição":"Defesa",
+    "Número":"7",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/caniggia\/157593",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Teixeira",
+    "Posição":"Defesa",
+    "Número":"19",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-teixeira\/19576",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gualter Bilro",
+    "Posição":"Defesa",
+    "Número":"20",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/gualter-bilro\/106059",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Gonçalves",
+    "Posição":"Defesa",
+    "Número":"22",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-goncalves\/215012",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Brandon Caldeira",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/brandon-caldeira\/1372709",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Baresi",
+    "Posição":"Médio",
+    "Número":"17",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-baresi\/215013",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mário Pessoa",
+    "Posição":"Médio",
+    "Número":"5",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mario-pessoa\/7805",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Eduardo Barão",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/eduardo-barao\/163208",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Afonso",
+    "Posição":"Médio",
+    "Número":"13",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-afonso\/158010",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jordan Hibbert",
+    "Posição":"Médio",
+    "Número":"16",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jordan-hibbert\/107976",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fajardo",
+    "Posição":"Médio",
+    "Número":"17",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fajardo\/41",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Atabu",
+    "Posição":"Médio",
+    "Número":"18",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/atabu\/114086",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pituca",
+    "Posição":"Médio",
+    "Número":"25",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pituca\/9132",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Vila",
+    "Posição":"Médio",
+    "Número":"28",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-vila\/208620",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Gomes",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-gomes\/133874",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Robert Oliveira",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/robert-oliveira\/161088",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Igor Sani",
+    "Posição":"Avançado",
+    "Número":"14",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/igor-sani\/161709",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Davide Justo",
+    "Posição":"Avançado",
+    "Número":"23",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/davide-justo\/158009",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nicolau",
+    "Posição":"Avançado",
+    "Número":"29",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nicolau\/215014",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Eugénio",
+    "Posição":"Avançado",
+    "Número":"77",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-eugenio\/16698",
+    "Época":"2011\/2012",
+    "Clube":"Farense"
+  }
+]

@@ -1,0 +1,281 @@
+[
+  {
+    "Nome":"Amaral",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/amaral\/11918",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Peres",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/peres\/174609",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Casaca",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-casaca\/247657",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nicolai Grancharov",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nicolai-grancharov\/323481",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jayme",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jayme\/323914",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Quaresma",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-quaresma\/79654",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Javi",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/javi\/128349",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bio",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bio\/162613",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"José Morgado",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jose-morgado\/174597",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Leonardo Teixeira",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/leonardo-teixeira\/174856",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Quim Manuel",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/quim-manuel\/174925",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jorge Marques",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jorge-marques\/162642",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paco Fortes",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paco-fortes\/15410",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mário Wilson",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mario-wilson\/15123",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nélson Borges",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nelson-borges\/174517",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"António Carraça",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/antonio-carraca\/174725",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hernâni Oliveira",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hernani-oliveira\/174797",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nelinho",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"17 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nelinho\/247664",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"José Herbert",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jose-herbert\/247669",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fernando Martins",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fernando-martins\/247675",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Antero Afonso",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/antero-afonso\/1373725",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Heliodoro Miranda",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/heliodoro-miranda\/1373769",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gil",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"34 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/gil\/27462",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rui Lopes",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rui-lopes\/15122",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Duan Bukovac",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/dusan-bukovac\/99483",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rogério Silva",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rogerio-silva\/174754",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Benny Martensson",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/benny-martensson\/247660",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Filipe",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-filipe\/247714",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ica",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ica\/272255",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"César",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/cesar\/174928",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rui Russo",
+    "Posição":"Universal",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rui-russo\/1373743",
+    "Época":"1984\/1985",
+    "Clube":"Farense"
+  }
+]

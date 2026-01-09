@@ -1,0 +1,245 @@
+[
+  {
+    "Nome":"Diogo Freitas",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"17 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/diogo-freitas\/160717",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"José Gomez",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jose-gomez\/146093",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Edgar Raposo",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/edgar-raposo\/146092",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gonçalo",
+    "Posição":"Guarda Redes",
+    "Número":"24",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/goncalo\/146070",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Caras",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/caras\/284226",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Wilson",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/wilson\/794834",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hernâni",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hernani\/851988",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Ró-Ró",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-ro-ro\/124070",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Lopes",
+    "Posição":"Defesa",
+    "Número":"4",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-lopes\/31226",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Caniggia",
+    "Posição":"Defesa",
+    "Número":"7",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/caniggia\/157593",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pablo Mendoza",
+    "Posição":"Defesa",
+    "Número":"25",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pablo-mendoza\/85356",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Idalécio",
+    "Posição":"Defesa",
+    "Número":"27",
+    "Idade":"36 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/idalecio\/177",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Norberto Chagas",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/norberto-chagas\/162130",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Edgar Rosa",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/edgar-rosa\/80468",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Filhó",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-filho\/215095",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Arlindo",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/arlindo\/163212",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vítor Quadros",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vitor-quadros\/146094",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rodrigo Ângelo",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rodrigo-angelo\/28893",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Afonso",
+    "Posição":"Médio",
+    "Número":"13",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-afonso\/158010",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paulinho",
+    "Posição":"Médio",
+    "Número":"18",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paulinho\/163211",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nuno Pintassilgo",
+    "Posição":"Médio",
+    "Número":"14",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nuno-pintassilgo\/30737",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gonçalo Galanducho",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/goncalo-galanducho\/279116",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tony Ribeiro",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tony-ribeiro\/280974",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alemão",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"37 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alemao\/342742",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alvarinho",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alvarinho\/146058",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Martins",
+    "Posição":"Avançado",
+    "Número":"16",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-martins\/163213",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Davide Justo",
+    "Posição":"Avançado",
+    "Número":"23",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/davide-justo\/158009",
+    "Época":"2009\/2010",
+    "Clube":"Farense"
+  }
+]

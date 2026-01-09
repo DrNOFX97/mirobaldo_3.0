@@ -1,0 +1,290 @@
+[
+  {
+    "Nome":"Peter Rufai",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/peter-rufai\/30732",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ivo Soares",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ivo-soares\/30487",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Candeias",
+    "Posição":"Guarda Redes",
+    "Número":"24",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/candeias\/616",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Marco Aurélio",
+    "Posição":"Guarda Redes",
+    "Número":"31",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marco-aurelio\/19",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Eugénio",
+    "Posição":"Defesa",
+    "Número":"2",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/eugenio\/30608",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Raul Oliveira",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/raul-oliveira\/440",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paixão",
+    "Posição":"Defesa",
+    "Número":"5",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paixao\/30486",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vítor Santos",
+    "Posição":"Defesa",
+    "Número":"16",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vitor-santos\/162101",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nuno Amaro",
+    "Posição":"Defesa",
+    "Número":"18",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nuno-amaro\/100",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Raul Barbosa",
+    "Posição":"Defesa",
+    "Número":"19",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/raul-barbosa\/31375",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Manuel Monteiro",
+    "Posição":"Defesa",
+    "Número":"22",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/manuel-monteiro\/30742",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Acácio Duarte",
+    "Posição":"Defesa",
+    "Número":"25",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/acacio-duarte\/30816",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Miguel",
+    "Posição":"Defesa",
+    "Número":"26",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-miguel\/30597",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Camilo Fernandes",
+    "Posição":"Defesa",
+    "Número":"27",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/camilo-fernandes\/30936",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Serôdio",
+    "Posição":"Defesa",
+    "Número":"29",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-serodio\/30485",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Duarte Constantino",
+    "Posição":"Defesa",
+    "Número":"30",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/duarte-constantino\/31225",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Robert Zirakishvili",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/robert-zirakishvili\/505314",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paiva",
+    "Posição":"Médio",
+    "Número":"4",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paiva\/238",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Helcinho",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/helcinho\/30499",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Dragan Punisic",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/dragan-punisic\/30599",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hajry",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hajry\/11697",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hernâni",
+    "Posição":"Médio",
+    "Número":"15",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hernani\/163223",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"David Alain",
+    "Posição":"Médio",
+    "Número":"16",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/david-alain\/163222",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlos Costa",
+    "Posição":"Médio",
+    "Número":"20",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlos-costa\/30598",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Zarko Draskovic",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/zarko-draskovic\/162863",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tozé Ribeiro",
+    "Posição":"Avançado",
+    "Número":"7",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/toze-ribeiro\/30493",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Marco Nuno",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marco-nuno\/112",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Milonja Djukic",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/milonja-djukic\/30497",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fernando",
+    "Posição":"Avançado",
+    "Número":"13",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fernando\/148993",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bráulio",
+    "Posição":"Avançado",
+    "Número":"14",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/braulio\/30937",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ramos",
+    "Posição":"Avançado",
+    "Número":"21",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ramos\/30736",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bambo",
+    "Posição":"Avançado",
+    "Número":"23",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bambo\/20245",
+    "Época":"1996\/1997",
+    "Clube":"Farense"
+  }
+]

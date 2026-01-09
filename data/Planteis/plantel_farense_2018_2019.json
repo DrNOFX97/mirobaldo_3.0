@@ -1,0 +1,263 @@
+[
+  {
+    "Nome":"Hugo Marques",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-marques\/39364",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Carvalho",
+    "Posição":"Guarda Redes",
+    "Número":"22",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-carvalho\/412426",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Daniel Fernandes",
+    "Posição":"Guarda Redes",
+    "Número":"90",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/daniel-fernandes\/10318",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Delmiro",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/delmiro\/231170",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fabinho",
+    "Posição":"Defesa",
+    "Número":"13",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabinho\/527670",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Filipe Godinho",
+    "Posição":"Defesa",
+    "Número":"70",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/filipe-godinho\/151022",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Michael",
+    "Posição":"Defesa",
+    "Número":"73",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/michael\/513204",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Kadri",
+    "Posição":"Defesa",
+    "Número":"5",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-kadri\/529812",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Milos Perisic",
+    "Posição":"Defesa",
+    "Número":"15",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/milos-perisic\/583124",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Cássio Scheid",
+    "Posição":"Defesa",
+    "Número":"41",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/cassio-scheid\/454744",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Bernardo",
+    "Posição":"Defesa",
+    "Número":"45",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-bernardo\/170433",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jorge Ribeiro",
+    "Posição":"Defesa",
+    "Número":"16",
+    "Idade":"37 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jorge-ribeiro\/335",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"David Moura",
+    "Posição":"Médio",
+    "Número":"20",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/david-moura\/429492",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vanja Markovic",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vanja-markovic\/310877",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fabrício Isidoro",
+    "Posição":"Médio",
+    "Número":"14",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabricio-isidoro\/133046",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nuno Borges",
+    "Posição":"Médio",
+    "Número":"55",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nuno-borges\/422477",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ryan Gauld",
+    "Posição":"Médio",
+    "Número":"88",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ryan-gauld\/223931",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Vieira",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-vieira\/188518",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Sérgio Teles",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/sergio-teles\/143905",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Daniel Bragança",
+    "Posição":"Médio",
+    "Número":"23",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/daniel-braganca\/84850",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Simões",
+    "Posição":"Médio",
+    "Número":"18",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-simoes\/473411",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tavinho",
+    "Posição":"Avançado",
+    "Número":"7",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tavinho\/188520",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mihlali Mayambela",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mihlali-mayambela\/509377",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Gomes",
+    "Posição":"Avançado",
+    "Número":"19",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-gomes\/237608",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Christian Irobiso",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/christian-irobiso\/209049",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Lynel Kitambala",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/lynel-kitambala\/43691",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alan Júnior",
+    "Posição":"Avançado",
+    "Número":"21",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alan-junior\/252751",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alvarinho",
+    "Posição":"Avançado",
+    "Número":"77",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alvarinho\/146058",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Nunes",
+    "Posição":"Avançado",
+    "Número":"92",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-nunes\/160496",
+    "Época":"2018\/2019",
+    "Clube":"Farense"
+  }
+]

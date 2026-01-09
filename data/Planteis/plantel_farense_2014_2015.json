@@ -1,0 +1,335 @@
+[
+  {
+    "Nome":"Ricardo Neves",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-neves\/25724",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Carvalho",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-carvalho\/412426",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vítor São Bento",
+    "Posição":"Guarda Redes",
+    "Número":"16",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vitor-sao-bento\/187938",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Lampreia",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-lampreia\/452309",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tin Karamatić",
+    "Posição":"Defesa",
+    "Número":"33",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tin-karamatic\/277837",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlos Califo",
+    "Posição":"Defesa",
+    "Número":"40",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlos-califo\/113919",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlitos",
+    "Posição":"Defesa",
+    "Número":"7",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlitos\/8937",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Ventosa",
+    "Posição":"Defesa",
+    "Número":"24",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-ventosa\/112291",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Marcelo Correia",
+    "Posição":"Defesa",
+    "Número":"2",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marcelo-correia\/254942",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Diogo Silva",
+    "Posição":"Defesa",
+    "Número":"4",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/diogo-silva\/10387",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Kiki Ballack",
+    "Posição":"Defesa",
+    "Número":"13",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/kiki-ballack\/222904",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlos Ponck",
+    "Posição":"Defesa",
+    "Número":"26",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlos-ponck\/396550",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Huang Wei",
+    "Posição":"Defesa",
+    "Número":"29",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/huang-wei\/309348",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Edgar Lameirão",
+    "Posição":"Defesa",
+    "Número":"30",
+    "Idade":"34 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/edgar-lameirao\/8764",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Luz",
+    "Posição":"Defesa",
+    "Número":"6",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-luz\/490",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rui Duarte",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"36 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rui-duarte\/8891",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Patrick Correia",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/patrick-correia\/1371958",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alan Khabalov",
+    "Posição":"Médio",
+    "Número":"15",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alan-khabalov\/450387",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nikola Zugic",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nikola-zugic\/161982",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tiago Lenho",
+    "Posição":"Médio",
+    "Número":"14",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tiago-lenho\/80470",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gualter Bilro",
+    "Posição":"Médio",
+    "Número":"20",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/gualter-bilro\/106059",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Carvalho",
+    "Posição":"Médio",
+    "Número":"22",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-carvalho\/112293",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Neca",
+    "Posição":"Médio",
+    "Número":"19",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/neca\/34",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jonathan Yombo",
+    "Posição":"Médio",
+    "Número":"23",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jonathan-yombo\/217761",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Lopes",
+    "Posição":"Médio",
+    "Número":"28",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-lopes\/172173",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno González",
+    "Posição":"Médio",
+    "Número":"5",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-gonzalez\/159209",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Matthew Silva",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/matthew-silva\/175769",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Harramiz",
+    "Posição":"Avançado",
+    "Número":"35",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/harramiz\/158171",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Gomes",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-gomes\/237608",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mailó Cruz",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mailo-cruz\/281717",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tan Yang",
+    "Posição":"Avançado",
+    "Número":"18",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tan-yang\/143839",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Edinho Júnior",
+    "Posição":"Avançado",
+    "Número":"21",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/edinho-junior\/199628",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Abraham Adelaja",
+    "Posição":"Avançado",
+    "Número":"25",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/abraham-adelaja\/163346",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Christian Irobiso",
+    "Posição":"Avançado",
+    "Número":"34",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/christian-irobiso\/209049",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hernâni",
+    "Posição":"Avançado",
+    "Número":"3",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hernani\/20369",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ernest Antwi",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ernest-antwi\/412434",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Márcio Madeira",
+    "Posição":"Avançado",
+    "Número":"17",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marcio-madeira\/142250",
+    "Época":"2014\/2015",
+    "Clube":"Farense"
+  }
+]

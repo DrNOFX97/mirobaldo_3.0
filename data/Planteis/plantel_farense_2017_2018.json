@@ -1,0 +1,299 @@
+[
+  {
+    "Nome":"João Pedro",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-pedro\/562764",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Costa",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-costa\/19416",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Marques",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-marques\/39364",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Guilherme Higino",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/guilherme-higino\/592724",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Carvalho",
+    "Posição":"Guarda Redes",
+    "Número":"22",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-carvalho\/412426",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fabinho",
+    "Posição":"Defesa",
+    "Número":"13",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabinho\/527670",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Filipe Godinho",
+    "Posição":"Defesa",
+    "Número":"70",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/filipe-godinho\/151022",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tiago Coelho",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tiago-coelho\/526783",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Kadri",
+    "Posição":"Defesa",
+    "Número":"5",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-kadri\/529812",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Cássio Scheid",
+    "Posição":"Defesa",
+    "Número":"41",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/cassio-scheid\/454744",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Bernardo",
+    "Posição":"Defesa",
+    "Número":"45",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-bernardo\/170433",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Delmiro",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/delmiro\/231170",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Celsinho",
+    "Posição":"Defesa",
+    "Número":"7",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/celsinho\/404140",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jorge Ribeiro",
+    "Posição":"Defesa",
+    "Número":"16",
+    "Idade":"36 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jorge-ribeiro\/335",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Edward Sarpong",
+    "Posição":"Defesa",
+    "Número":"36",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/edward-sarpong\/500265",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedró",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro\/99923",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Kaká",
+    "Posição":"Médio",
+    "Número":"98",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/kaka\/543666",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Ceitil",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-ceitil\/143916",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fabrício Isidoro",
+    "Posição":"Médio",
+    "Número":"14",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabricio-isidoro\/133046",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nuno Borges",
+    "Posição":"Médio",
+    "Número":"55",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nuno-borges\/422477",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Neca",
+    "Posição":"Médio",
+    "Número":"19",
+    "Idade":"38 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/neca\/34",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"António Livramento",
+    "Posição":"Médio",
+    "Número":"97",
+    "Idade":"36 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/antonio-livramento\/8770",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Afonso",
+    "Posição":"Médio",
+    "Número":"25",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-afonso\/464700",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Vieira",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-vieira\/188518",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Leo Tomé",
+    "Posição":"Médio",
+    "Número":"20",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/leo-tome\/161992",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nuno Silva",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nuno-silva\/20354",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tavinho",
+    "Posição":"Avançado",
+    "Número":"17",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tavinho\/188520",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Zambujo",
+    "Posição":"Avançado",
+    "Número":"23",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-zambujo\/31034",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Sèrge Brou",
+    "Posição":"Avançado",
+    "Número":"30",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/serge-brou\/493503",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jorginho",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jorginho\/411936",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Christian Irobiso",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/christian-irobiso\/209049",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Gomes",
+    "Posição":"Avançado",
+    "Número":"21",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-gomes\/237608",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alvarinho",
+    "Posição":"Avançado",
+    "Número":"77",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alvarinho\/146058",
+    "Época":"2017\/2018",
+    "Clube":"Farense"
+  }
+]

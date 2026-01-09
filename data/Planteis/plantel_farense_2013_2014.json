@@ -1,0 +1,299 @@
+[
+  {
+    "Nome":"Ivo Gonçalves",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ivo-goncalves\/23845",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ricardo Neves",
+    "Posição":"Guarda Redes",
+    "Número":"13",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-neves\/25724",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vítor São Bento",
+    "Posição":"Guarda Redes",
+    "Número":"24",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vitor-sao-bento\/187938",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hélder Duarte",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/helder-duarte\/214831",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlitos",
+    "Posição":"Defesa",
+    "Número":"7",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlitos\/8937",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Diogo Silva",
+    "Posição":"Defesa",
+    "Número":"4",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/diogo-silva\/10387",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Joshua Silva",
+    "Posição":"Defesa",
+    "Número":"5",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joshua-silva\/56466",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fausto Lúcio",
+    "Posição":"Defesa",
+    "Número":"21",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fausto-lucio\/69436",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ubay Luzardo",
+    "Posição":"Defesa",
+    "Número":"23",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ubay-luzardo\/125578",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Edgar Lameirão",
+    "Posição":"Defesa",
+    "Número":"29",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/edgar-lameirao\/8764",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Luz",
+    "Posição":"Defesa",
+    "Número":"6",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-luz\/490",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gualter Bilro",
+    "Posição":"Médio",
+    "Número":"20",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/gualter-bilro\/106059",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Marcelo Correia",
+    "Posição":"Médio",
+    "Número":"2",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marcelo-correia\/254942",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nikola Zugic",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nikola-zugic\/161982",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jim Morrison",
+    "Posição":"Médio",
+    "Número":"15",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jim-morrison\/201392",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"António Livramento",
+    "Posição":"Médio",
+    "Número":"10",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/antonio-livramento\/8770",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Neca",
+    "Posição":"Médio",
+    "Número":"19",
+    "Idade":"34 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/neca\/34",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Atabu",
+    "Posição":"Médio",
+    "Número":"12",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/atabu\/114086",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"David Guerreiro",
+    "Posição":"Médio",
+    "Número":"26",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/david-guerreiro\/112537",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Leonard Johnson",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/leonard-johnson\/523209",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Juan San Martín",
+    "Posição":"Avançado",
+    "Número":"16",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/juan-san-martin\/187957",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Diogo Alves",
+    "Posição":"Avançado",
+    "Número":"32",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/diogo-alves\/244226",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Eugénio",
+    "Posição":"Avançado",
+    "Número":"22",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-eugenio\/16698",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Matias",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-matias\/108249",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ibukun Akinfenwa",
+    "Posição":"Avançado",
+    "Número":"14",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ibukun-akinfenwa\/216519",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Reis",
+    "Posição":"Avançado",
+    "Número":"17",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-reis\/161986",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mbaye Diop",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mbaye-diop\/95901",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rambé",
+    "Posição":"Avançado",
+    "Número":"25",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rambe\/152248",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Abraham Adelaja",
+    "Posição":"Avançado",
+    "Número":"27",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/abraham-adelaja\/163346",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rafael Silveira",
+    "Posição":"Avançado",
+    "Número":"30",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rafael-silveira\/325501",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paulo Clemente",
+    "Posição":"Avançado",
+    "Número":"31",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paulo-clemente\/19577",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Felício",
+    "Posição":"Avançado",
+    "Número":"18",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-felicio\/530",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hernâni",
+    "Posição":"Avançado",
+    "Número":"28",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hernani\/20369",
+    "Época":"2013\/2014",
+    "Clube":"Farense"
+  }
+]

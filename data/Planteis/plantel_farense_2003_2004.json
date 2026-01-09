@@ -1,0 +1,389 @@
+[
+  {
+    "Nome":"Filipe Leão",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/filipe-leao\/563",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Telmo",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/telmo\/766444",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gonçalo",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/goncalo\/146070",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Serginho",
+    "Posição":"Guarda Redes",
+    "Número":"-",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/serginho\/284107",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paixão",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paixao\/30486",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"José Carlos",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jose-carlos\/31494",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Edgar do Ó",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/edgar-do-o\/19573",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Dimas",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-dimas\/97717",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Álvaro",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alvaro\/167902",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Albino",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-albino\/283737",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Diogo Afonso",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"17 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/diogo-afonso\/194296",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Casaca",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-casaca\/766474",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Marco Gonçalves",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/marco-goncalves\/766481",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ricardo Arriegas",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"17 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-arriegas\/766488",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"David Xavier",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"17 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/david-xavier\/766494",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Banana",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-banana\/766511",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Nunes",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-nunes\/161235",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Roberto Silva",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/roberto-silva\/1290413",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Hipólito",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-hipolito\/444",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Gomes",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-gomes\/31341",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Estrela",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-estrela\/30752",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlos Costa",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"37 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlos-costa\/30598",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Palma",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/palma\/28913",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fernando Vaz Tê",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fernando-vaz-te\/109561",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Rodrigues",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-rodrigues\/131142",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Vítor Quadros",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/vitor-quadros\/146094",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Leo Tomé",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"17 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/leo-tome\/161992",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Norberto Chagas",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/norberto-chagas\/162130",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paulinho",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paulinho\/163211",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Ferreira",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-ferreira\/19575",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jaime",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jaime\/766502",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rúben Mestre",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ruben-mestre\/767482",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rui Carrega",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rui-carrega\/767483",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Filipe Costa",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/filipe-costa\/773316",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hassan Nader",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"38 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hassan-nader\/12977",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Óscar",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/oscar\/31379",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Paixão",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-paixao\/10679",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Santos",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-santos\/148579",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"José Alexandre",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jose-alexandre\/734381",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Guilherme Cruz",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/guilherme-cruz\/766505",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Palhinha",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-palhinha\/766522",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"João Albino",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joao-albino\/768474",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ivan Caetano",
+    "Posição":"Universal",
+    "Número":"-",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ivan-caetano\/1373012",
+    "Época":"2003\/2004",
+    "Clube":"Farense"
+  }
+]

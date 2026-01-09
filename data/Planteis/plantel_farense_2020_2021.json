@@ -1,0 +1,299 @@
+[
+  {
+    "Nome":"Hugo Marques",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-marques\/39364",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Beto Pimparel",
+    "Posição":"Guarda Redes",
+    "Número":"3",
+    "Idade":"39 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/beto-pimparel\/20355",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rafael Defendi",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"37 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rafael-defendi\/42025",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ricardo Velho",
+    "Posição":"Guarda Redes",
+    "Número":"33",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-velho\/227413",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ricardo Ferreira",
+    "Posição":"Defesa",
+    "Número":"24",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-ferreira\/74740",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alex Pinto",
+    "Posição":"Defesa",
+    "Número":"78",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alex-pinto\/413238",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tomás Tavares",
+    "Posição":"Defesa",
+    "Número":"84",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tomas-tavares\/413293",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"César Martins",
+    "Posição":"Defesa",
+    "Número":"4",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/cesar-martins\/248038",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Pinto",
+    "Posição":"Defesa",
+    "Número":"25",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-pinto\/46702",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Cássio Scheid",
+    "Posição":"Defesa",
+    "Número":"41",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/cassio-scheid\/454744",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Eduardo Mancha",
+    "Posição":"Defesa",
+    "Número":"95",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/eduardo-mancha\/461880",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Abner Felipe",
+    "Posição":"Defesa",
+    "Número":"30",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/abner-felipe\/349062",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fábio Nunes",
+    "Posição":"Defesa",
+    "Número":"92",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabio-nunes\/160496",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Simões",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-simoes\/473411",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Bandarra",
+    "Posição":"Médio",
+    "Número":"17",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-bandarra\/247828",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Filipe Melo",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"31 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/filipe-melo\/84949",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bura",
+    "Posição":"Médio",
+    "Número":"13",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bura\/554773",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fabrício Isidoro",
+    "Posição":"Médio",
+    "Número":"14",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fabricio-isidoro\/133046",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Cláudio Falcão",
+    "Posição":"Médio",
+    "Número":"29",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/claudio-falcao\/391764",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Jonatan Lucca",
+    "Posição":"Médio",
+    "Número":"47",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jonatan-lucca\/267766",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ryan Gauld",
+    "Posição":"Médio",
+    "Número":"23",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ryan-gauld\/223931",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Amine Oudrhiri",
+    "Posição":"Médio",
+    "Número":"5",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/amine-oudrhiri\/280505",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ângelo Taveira",
+    "Posição":"Avançado",
+    "Número":"-",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/angelo-taveira\/681348",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Madi Queta",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"22 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/madi-queta\/288913",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Djalma Campos",
+    "Posição":"Avançado",
+    "Número":"20",
+    "Idade":"34 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/djalma-campos\/33849",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nikola Stojiljkovic",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nikola-stojiljkovic\/102404",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Patrick Fernandes",
+    "Posição":"Avançado",
+    "Número":"19",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/patrick-fernandes\/532769",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pedro Henrique",
+    "Posição":"Avançado",
+    "Número":"96",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pedro-henrique\/507350",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Seco",
+    "Posição":"Avançado",
+    "Número":"7",
+    "Idade":"33 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-seco\/122601",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Brian Mansilla",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/brian-mansilla\/453674",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bilel Aouacheria",
+    "Posição":"Avançado",
+    "Número":"26",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bilel-aouacheria\/416972",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alvarinho",
+    "Posição":"Avançado",
+    "Número":"77",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alvarinho\/146058",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Licá",
+    "Posição":"Avançado",
+    "Número":"88",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/lica\/35255",
+    "Época":"2020\/2021",
+    "Clube":"Farense"
+  }
+]

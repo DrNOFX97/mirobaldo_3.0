@@ -1,0 +1,200 @@
+[
+  {
+    "Nome":"Serrão",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"35 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/serrao\/8848",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"José Gomez",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jose-gomez\/146093",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gonçalo",
+    "Posição":"Guarda Redes",
+    "Número":"24",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/goncalo\/146070",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Mamadou NDiaye",
+    "Posição":"Defesa",
+    "Número":"2",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/mamadou-n-diaye\/29086",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Tiago Sousa",
+    "Posição":"Defesa",
+    "Número":"3",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/tiago-sousa\/8816",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Caniggia",
+    "Posição":"Defesa",
+    "Número":"7",
+    "Idade":"34 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/caniggia\/157593",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Ricardo Calado",
+    "Posição":"Defesa",
+    "Número":"17",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ricardo-calado\/146337",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gualter Bilro",
+    "Posição":"Defesa",
+    "Número":"20",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/gualter-bilro\/106059",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Joshua Silva",
+    "Posição":"Defesa",
+    "Número":"21",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/joshua-silva\/56466",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Arlindo",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/arlindo\/163212",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Eduardo Barão",
+    "Posição":"Médio",
+    "Número":"8",
+    "Idade":"30 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/eduardo-barao\/163208",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Afonso",
+    "Posição":"Médio",
+    "Número":"13",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-afonso\/158010",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"André Calado",
+    "Posição":"Médio",
+    "Número":"17",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/andre-calado\/163205",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Paulinho",
+    "Posição":"Médio",
+    "Número":"18",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/paulinho\/163211",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Luís Zambujo",
+    "Posição":"Médio",
+    "Número":"19",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/luis-zambujo\/31034",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlinhos",
+    "Posição":"Médio",
+    "Número":"28",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlinhos\/146339",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Adérito Semedo",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/aderito-semedo\/112301",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Carvalho",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-carvalho\/112293",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Keu",
+    "Posição":"Avançado",
+    "Número":"11",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/keu\/155350",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"China",
+    "Posição":"Avançado",
+    "Número":"14",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/china\/146340",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Martins",
+    "Posição":"Avançado",
+    "Número":"16",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-martins\/163213",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Davide Justo",
+    "Posição":"Avançado",
+    "Número":"23",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/davide-justo\/158009",
+    "Época":"2010\/2011",
+    "Clube":"Farense"
+  }
+]

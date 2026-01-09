@@ -1,0 +1,245 @@
+[
+  {
+    "Nome":"Cândido",
+    "Posição":"Guarda Redes",
+    "Número":"1",
+    "Idade":"32 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/candido\/8759",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Konstantopoulos",
+    "Posição":"Guarda Redes",
+    "Número":"12",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/konstantopoulos\/48673",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Gonçalo",
+    "Posição":"Guarda Redes",
+    "Número":"24",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/goncalo\/146070",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Roberto Silva",
+    "Posição":"Defesa",
+    "Número":"-",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/roberto-silva\/1290413",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hélder Rosário",
+    "Posição":"Defesa",
+    "Número":"4",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/helder-rosario\/471",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nuno Campos",
+    "Posição":"Defesa",
+    "Número":"5",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nuno-campos\/31202",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Laranjo",
+    "Posição":"Defesa",
+    "Número":"14",
+    "Idade":"27 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/laranjo\/9119",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Carlos Costa",
+    "Posição":"Defesa",
+    "Número":"20",
+    "Idade":"36 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/carlos-costa\/30598",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hugo Gomes",
+    "Posição":"Defesa",
+    "Número":"23",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hugo-gomes\/31341",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Pelé",
+    "Posição":"Defesa",
+    "Número":"26",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/pele\/473",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Alves",
+    "Posição":"Defesa",
+    "Número":"30",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-alves\/511",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rodrigo Ângelo",
+    "Posição":"Médio",
+    "Número":"-",
+    "Idade":"18 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/rodrigo-angelo\/28893",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Patrick M´Bele",
+    "Posição":"Médio",
+    "Número":"2",
+    "Idade":"28 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/patrick-m-bele\/91813",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Sabugo",
+    "Posição":"Médio",
+    "Número":"6",
+    "Idade":"26 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/sabugo\/31203",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Rúben",
+    "Posição":"Médio",
+    "Número":"16",
+    "Idade":"19 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/ruben\/190975",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"José Taira",
+    "Posição":"Médio",
+    "Número":"21",
+    "Idade":"34 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/jose-taira\/15425",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Félix Anasludu",
+    "Posição":"Médio",
+    "Número":"25",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/felix-anasludu\/396855",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"António Livramento",
+    "Posição":"Médio",
+    "Número":"27",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/antonio-livramento\/8770",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Agasson",
+    "Posição":"Médio",
+    "Número":"29",
+    "Idade":"29 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/agasson\/32152",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Alberto Louzeiro",
+    "Posição":"Médio",
+    "Número":"35",
+    "Idade":"20 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/alberto-louzeiro\/79060",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Nabor",
+    "Posição":"Avançado",
+    "Número":"8",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/nabor\/31339",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Hassan Nader",
+    "Posição":"Avançado",
+    "Número":"9",
+    "Idade":"37 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/hassan-nader\/12977",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Patrick Silva",
+    "Posição":"Avançado",
+    "Número":"10",
+    "Idade":"24 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/patrick-silva\/65263",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Maki",
+    "Posição":"Avançado",
+    "Número":"13",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/maki\/31323",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Bruno Mestre",
+    "Posição":"Avançado",
+    "Número":"17",
+    "Idade":"21 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/bruno-mestre\/598",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Miguel Xavier",
+    "Posição":"Avançado",
+    "Número":"19",
+    "Idade":"25 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/miguel-xavier\/8927",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  },
+  {
+    "Nome":"Fumo",
+    "Posição":"Avançado",
+    "Número":"22",
+    "Idade":"23 anos",
+    "Link":"https:\/\/www.zerozero.pt\/jogador\/fumo\/17811",
+    "Época":"2002\/2003",
+    "Clube":"Farense"
+  }
+]

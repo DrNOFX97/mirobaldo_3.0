@@ -75,6 +75,149 @@ def find_relevant_context(question, historical_text, max_context_length=4000):
         logger.error(f"Error in find_relevant_context: {e}")
         return "Não encontrei informações relevantes para esta pergunta."
 
+def find_biography_for_query(question: str, max_chars: int = 1500) -> str:
+    """
+    Search biography files for a player mentioned in the question.
+    Returns the biography text if found, empty string otherwise.
+
+    Strategy:
+    1. Extract candidate name tokens from the query (nouns after "quem foi", "sobre", etc.)
+    2. Scan biography filenames and first-line names for a match
+    3. Return the best matching biography (truncated to max_chars)
+    """
+    from pathlib import Path
+
+    bio_dir = Path(__file__).parent.parent / "data" / "chatbot_dados" / "biografias"
+    if not bio_dir.exists():
+        return ""
+
+    # Normalise query
+    norm_q = remove_accents(question.lower())
+
+    # Extract candidate name: words after trigger phrases, or all words ≥ 3 chars
+    trigger_patterns = [
+        r'(?:quem foi|fala.me de|conta.me sobre|carreira de|o que fez|conquistas de|apresentar|historia de|sobre)\s+(.+)',
+    ]
+    candidate = ""
+    for pat in trigger_patterns:
+        m = re.search(pat, norm_q)
+        if m:
+            candidate = m.group(1).strip().rstrip('?.')
+            break
+    if not candidate:
+        # Fallback: all words ≥ 3 chars
+        candidate = norm_q
+
+    candidate_words = [w for w in candidate.split() if len(w) >= 3]
+    if not candidate_words:
+        return ""
+
+    # Score all biography files
+    all_bio_files = list(bio_dir.rglob("*.txt")) + list(bio_dir.rglob("*.md"))
+    best_score = 0
+    best_text = ""
+
+    placeholder_markers = ["nao disponiv", "informacoes: n/a", "sem informacao", "sem dados"]
+
+    for bio_file in all_bio_files:
+        # Score based on filename match
+        fname_norm = remove_accents(bio_file.stem.lower().replace('_', ' ').replace('-', ' '))
+        score = sum(1 for w in candidate_words if w in fname_norm)
+
+        if score == 0:
+            continue  # skip files with no name match
+
+        # Read full content
+        try:
+            with open(bio_file, encoding='utf-8') as f:
+                content = f.read()
+
+            # Skip placeholder/stub files
+            content_norm = remove_accents(content.lower())
+            if any(p in content_norm for p in placeholder_markers):
+                continue
+            if len(content.strip()) < 80:
+                continue
+
+            first_line = remove_accents(content.split('\n')[0].lower())
+            name_score = sum(1 for w in candidate_words if w in first_line)
+            score += name_score
+
+            if score > best_score:
+                best_score = score
+                best_text = content
+        except Exception:
+            continue
+
+    if best_score == 0 or not best_text:
+        return ""
+
+    return best_text[:max_chars]
+
+
+def format_biography_as_answer(bio_text: str, name: str) -> str:
+    """
+    Extract key facts from a biography file and return a clean prose answer.
+    Works for both structured .md files (with metadata header) and prose .txt files.
+    Returns empty string if insufficient data found.
+    """
+    import re as _re
+
+    # ── Structured .md: has **DD/MM/YYYY, Place** | **Position** ──────────────
+    meta = _re.search(
+        r'\*{1,2}(\d{2}/\d{2}/\d{4}),\s*([^*|]+)\*{1,2}\s*\|\s*\*{1,2}([^*\n]+)\*{1,2}',
+        bio_text
+    )
+    if meta:
+        date, place, position = [x.strip() for x in meta.groups()]
+        parts = [f"{name} nasceu a {date} em {place} e foi {position}."]
+
+        # Career span
+        career = _re.search(r'\*\*Carreira:\*\*\s*([^\n]+)', bio_text)
+        if career:
+            span = _re.sub(r'\*{1,3}([^*]+)\*{1,3}', r'\1', career.group(1)).strip(' .,')
+            if span:
+                parts.append(f"A sua carreira decorreu entre {span}.")
+
+        # Clubs: lines with (YYYY-YYYY) or club section headers
+        club_names = _re.findall(r'##\s+([^:()\n]+?)(?:\s*[:(]|\s*$)', bio_text, _re.MULTILINE)
+        club_names = [c.strip() for c in club_names if len(c.strip()) > 2]
+        if club_names:
+            parts.append(f"Ao longo da sua carreira, representou: {', '.join(club_names[:5])}.")
+
+        # Titles
+        titles = _re.findall(r'🏆[^\n]+', bio_text)
+        titles_clean = []
+        seen = set()
+        for t in titles:
+            t = _re.sub(r'[🏆*]', '', t).strip(' -•')
+            norm = _re.sub(r'\s+', '', t).upper()
+            if t and norm not in seen:
+                seen.add(norm)
+                titles_clean.append(t)
+        if titles_clean:
+            parts.append(f"Conquistou: {'; '.join(titles_clean[:3])}.")
+
+        return ' '.join(parts)
+
+    # ── Prose .txt: return first 2 clean paragraphs ───────────────────────────
+    clean = _re.sub(r'#{1,6}\s+', '', bio_text)
+    clean = _re.sub(r'\*{1,3}([^*]+)\*{1,3}', r'\1', clean)
+    clean = _re.sub(r'<[^>]+>', '', clean)
+    clean = _re.sub(r'^[-*•]\s+', '', clean, flags=_re.MULTILINE)
+    clean = _re.sub(r'\n{3,}', '\n\n', clean).strip()
+
+    paragraphs = [
+        p.strip() for p in clean.split('\n\n')
+        if len(p.strip()) > 40 and len(p.strip().split()) >= 8 and any(c in p for c in '.!?;')
+    ]
+
+    if paragraphs:
+        return '\n\n'.join(paragraphs[:2])
+
+    return ""
+
+
 def read_historical_results_from_db(table_name):
     """
     Read historical results from a JSON file.

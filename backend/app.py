@@ -46,11 +46,12 @@ except Exception as e:
 
 # Get the absolute path of the project directory
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
+FRONTEND_DIR = os.path.join(os.path.dirname(PROJECT_DIR), 'frontend', 'mirobaldo_src')
 
 # Create Flask app with correct template and static folders
-app = Flask(__name__, 
-            template_folder=os.path.join(PROJECT_DIR, 'src'),  
-            static_folder=os.path.join(PROJECT_DIR, 'src', 'static'),
+app = Flask(__name__,
+            template_folder=FRONTEND_DIR,
+            static_folder=os.path.join(FRONTEND_DIR, 'static'),
             static_url_path='/static')
 CORS(app)
 
@@ -795,9 +796,6 @@ def main():
     except Exception as e:
         print(f"Fatal error starting application: {e}")
 
-if __name__ == '__main__':
-    main()
-
 def format_classification_table(df):
     """
     Format the league classification DataFrame with custom styling.
@@ -895,3 +893,7 @@ def farense_chat_api():
             'success': False,
             'error': str(e)
         }), 500
+
+
+if __name__ == '__main__':
+    main()

@@ -4,11 +4,14 @@ import json
 import os
 import re
 import tiktoken
-import openai
+# import openai  # Replaced by MLX
 from dotenv import load_dotenv
+from mlx_interface import chat_completion_mlx  # MLX replacement for OpenAI
 from utils import (
-    remove_accents, 
-    find_relevant_context, 
+    remove_accents,
+    find_relevant_context,
+    find_biography_for_query,
+    format_biography_as_answer,
     read_historical_results_from_db,
     get_antonio_gago_biography
 )
@@ -27,42 +30,33 @@ HISTORICAL_RESULTS_TABLE = 'historical_results'
 HISTORICAL_50_YEARS_TABLE = 'historical_50_years'
 BIOGRAPHIES_TABLE = 'biographies'
 
-def get_response_from_agent(prompt, context, role, max_length=2048):
+def get_response_from_agent(prompt, context, role, max_length=2048, temperature=0.4):
     """
-    Generate AI response using OpenAI API.
-    
+    Generate AI response using MLX (local inference).
+
     Args:
         prompt (str): User's query
         context (str): Relevant historical context
         role (str): System role description
         max_length (int): Maximum token length
-    
+
     Returns:
         str: AI-generated response
     """
-    # Load OpenAI API key from environment
-    load_dotenv()
-    openai.api_key = os.getenv('OPENAI_API_KEY')
-    
     try:
-        # Prepare messages for OpenAI with valid roles
+        # Prepare messages for MLX (same format as OpenAI)
         messages = [
             {"role": "system", "content": role},
             {"role": "user", "content": f"Contexto histórico: {context}\n\nPergunta: {prompt}"}
         ]
-        
-        # Generate response using latest OpenAI library
-        response = openai.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=messages,
-            max_tokens=max_length
-        )
-        
-        # Extract content from the latest library response
-        return response.choices[0].message.content.strip()
-    
+
+        # Generate response using MLX
+        response = chat_completion_mlx(messages, max_tokens=max_length, temperature=temperature)
+
+        return response.strip()
+
     except Exception as e:
-        logger.error(f"OpenAI API error: {e}")
+        logger.error(f"MLX generation error: {e}")
         return "Desculpe, não consegui processar sua pergunta no momento."
 
 def generate_rich_response(biography, question):
@@ -158,7 +152,35 @@ def mirobaldo_chatbot(question, historical_context):
         # Retrieve relevant context
         context = find_relevant_context(question, historical_context)
         logger.debug(f"Retrieved context length: {len(context)} characters")
-        
+
+        # Biography RAG: detect player queries and inject biography as context
+        player_triggers = [
+            'quem foi', 'quem e', 'fala-me de', 'fala me de',
+            'conta-me sobre', 'conta me sobre', 'carreira de',
+            'historia de', 'apresentar', 'o que fez',
+        ]
+        is_player_query = any(t in normalized_question for t in player_triggers)
+        biography_injected = False
+        if is_player_query:
+            bio_text = find_biography_for_query(question)
+            if bio_text:
+                # Extract player name for formatting
+                name_match = re.search(
+                    r'(?:quem foi|sobre|apresentar|carreira de|fez|conquistas de|jogou)\s+([^\?\.]+)',
+                    normalized_question
+                )
+                player_name = name_match.group(1).strip().title() if name_match else "o jogador"
+
+                direct_answer = format_biography_as_answer(bio_text, player_name)
+                if direct_answer:
+                    logger.info(f"Biography RAG direct answer for '{question}'")
+                    return direct_answer
+
+                # Fallback: inject raw text as context for the LLM
+                context = bio_text
+                biography_injected = True
+                logger.info(f"Biography RAG: injected {len(bio_text)} chars for query '{question}'")
+
         # Special handling for specific queries
         if 'gago' in normalized_question:
             logger.info("Detected query about António Gago")
@@ -349,22 +371,14 @@ def mirobaldo_chatbot(question, historical_context):
                 - Priorize informações sobre a origem e desenvolvimento do clube
                 """
                 
-                # Generate the history response with streaming
-                stream_response = openai.chat.completions.create(
-                    model="gpt-3.5-turbo-16k",
+                # Generate the history response using MLX
+                history_response = chat_completion_mlx(
                     messages=[
                         {"role": "system", "content": "O senhor é um historiador especializado na história do Sporting Clube Farense."},
                         {"role": "user", "content": history_prompt}
                     ],
-                    max_tokens=1024,  # Reduced token request
-                    stream=True  # Enable streaming
+                    max_tokens=1024
                 )
-                
-                # Collect streamed response
-                history_response = ""
-                for chunk in stream_response:
-                    if chunk.choices[0].delta.content is not None:
-                        history_response += chunk.choices[0].delta.content
                 
                 logger.debug(f"FORCED: Club history response generated (length: {len(history_response)} characters)")
                 return history_response
@@ -373,7 +387,7 @@ def mirobaldo_chatbot(question, historical_context):
                 # Log the full error details
                 logger.error(f"FORCED: Error generating club history", exc_info=True)
                 
-                # If OpenAI API fails, provide a fallback response
+                # If MLX generation fails, provide a fallback response
                 return (
                     "Peço desculpas, mas não foi possível gerar a história completa do clube neste momento. "
                     "O Sporting Clube Farense tem uma rica história no futebol algarvio, "
@@ -382,17 +396,26 @@ def mirobaldo_chatbot(question, historical_context):
                 )
         
         # Fallback to AI-generated response
-        system_role = (
-            "Você é Mirobaldo, um assistente virtual especializado na história "
-            "do Sporting Clube Farense. Responda de forma amigável e informativa "
-            "com base no contexto histórico fornecido. Seja conciso e direto."
-        )
-        
+        if biography_injected:
+            system_role = (
+                "És o Mirobaldo, assistente especializado na história do Sporting Clube Farense. "
+                "Responde APENAS com base no contexto fornecido. "
+                "Não inventes factos. Se a informação não estiver no contexto, diz que não tens dados. "
+                "Responde em português europeu, de forma concisa."
+            )
+        else:
+            system_role = (
+                "Você é Mirobaldo, um assistente virtual especializado na história "
+                "do Sporting Clube Farense. Responda de forma amigável e informativa "
+                "com base no contexto histórico fornecido. Seja conciso e direto."
+            )
+
         logger.info("Generating AI response for general query")
         ai_response = get_response_from_agent(
-            prompt=question, 
-            context=context, 
-            role=system_role
+            prompt=question,
+            context=context,
+            role=system_role,
+            temperature=0.2 if biography_injected else 0.5,
         )
         
         # Log response details

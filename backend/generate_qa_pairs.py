@@ -292,17 +292,418 @@ class QAPairGenerator:
         logger.info(f"Generated {pairs_count} Q&A pairs from {len(best_by_name)} unique players")
         return pairs_count
 
+    # ── Results helpers ──────────────────────────────────────────────────────
+
+    def _parse_score(self, resultado: str):
+        """Return (farense_goals, opponent_goals) or None. Result is always Farense-Opponent."""
+        m = re.match(r'^(\d+)-(\d+)$', resultado.strip())
+        return (int(m.group(1)), int(m.group(2))) if m else None
+
+    def _comp_short(self, comp_name: str) -> str:
+        """Strip year suffix from competition name for cleaner prose."""
+        label = re.sub(r'[\s/\-]*(19|20)\d\d[\s/\-]*\d*$', '', comp_name).strip()
+        # Strip trailing 2-digit/2-digit season tokens like "35/36", "23/24"
+        label = re.sub(r'\s+\d{2}/\d{2}$', '', label).strip()
+        # Strip trailing 4-digit years
+        label = re.sub(r'\s+(19|20)\d{2}$', '', label).strip()
+        return label if label else comp_name
+
+    def _is_top_flight(self, comp_name: str) -> bool:
+        """Return True if this competition is the top Portuguese division."""
+        cn = comp_name.lower()
+        # Check for 'I Divisão' preceded by space/start (not 'II Divisão', 'III Divisão')
+        if re.search(r'(?:^|[ a])i divis', cn):
+            return True
+        return any(kw in cn for kw in [
+            'primeira liga', 'liga nos', 'liga portugal betclic',
+            'liga portuguesa', 'liga betclic', 'liganos',
+        ])
+
+    def _plural(self, n: int, singular: str, plural: str) -> str:
+        return f"{n} {singular}" if n == 1 else f"{n} {plural}"
+
+    def _local_str(self, local: str) -> str:
+        return "em casa" if local == "Casa" else "fora de casa"
+
+    def _date_pt(self, date_str: str) -> str:
+        """Convert YYYY-MM-DD to DD/MM/YYYY."""
+        try:
+            parts = date_str.split('-')
+            return f"{parts[2]}/{parts[1]}/{parts[0]}"
+        except Exception:
+            return date_str
+
     def generate_results_questions(self) -> int:
-        """Generate Q&A pairs from historical results"""
-        # TODO: Implement when we understand the results data format
-        logger.info("Results Q&A generation: TODO")
-        return 0
+        """Generate Q&A pairs from historical match results (dados_jogos.json)."""
+        results_file = self.data_dir.parent / "dados_jogos.json"
+        if not results_file.exists():
+            logger.warning(f"Results file not found: {results_file}")
+            return 0
+
+        with open(results_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+
+        system_prompt = (
+            "És o Mirobaldo, um assistente virtual especializado na história do "
+            "Sporting Clube Farense. Respondes de forma clara e concisa em português "
+            "europeu, com base nos factos históricos do clube."
+        )
+
+        pairs = []
+        seasons = list(data.keys())
+
+        for season in seasons:
+            competitions = data[season]
+            if not competitions:
+                continue
+
+            all_matches = []
+            for comp_name, matches in competitions.items():
+                for m in matches:
+                    all_matches.append({**m, "_comp": comp_name})
+
+            if not all_matches:
+                continue
+
+            # ── Q1: Season overview ────────────────────────────────────────
+            comp_summaries = []
+            for comp_name, matches in competitions.items():
+                if not matches:
+                    continue
+                wins   = sum(1 for m in matches if m.get('V-E-D') == 'V')
+                draws  = sum(1 for m in matches if m.get('V-E-D') == 'E')
+                losses = sum(1 for m in matches if m.get('V-E-D') == 'D')
+                total  = wins + draws + losses
+                comp_summaries.append(
+                    f"na {self._comp_short(comp_name)} disputou {self._plural(total, 'jogo', 'jogos')} "
+                    f"({wins}V {draws}E {losses}D)"
+                )
+
+            if comp_summaries:
+                n_comps = len(competitions)
+                comps_label = self._plural(n_comps, "competição", "competições")
+                overview_answer = (
+                    f"Na época {season}, o Farense participou em {comps_label}: "
+                    + "; ".join(comp_summaries) + "."
+                )
+                pairs.append({
+                    "messages": [
+                        {"role": "system",    "content": system_prompt},
+                        {"role": "user",      "content": f"Como foi a época {season} do Farense?"},
+                        {"role": "assistant", "content": overview_answer},
+                    ]
+                })
+
+            # ── Q2: Biggest win of the season ──────────────────────────────
+            scored_matches = [
+                (m, self._parse_score(m.get('Resultado', '')))
+                for m in all_matches
+            ]
+            wins_scored = [
+                (m, score) for m, score in scored_matches
+                if score and m.get('V-E-D') == 'V'
+            ]
+            if wins_scored:
+                best_match, best_score = max(
+                    wins_scored, key=lambda x: x[1][0] - x[1][1]
+                )
+                margin = best_score[0] - best_score[1]
+                if margin >= 2:  # only mention noteworthy wins
+                    score_str = f"{best_score[0]}-{best_score[1]}"
+                    pairs.append({
+                        "messages": [
+                            {"role": "system",    "content": system_prompt},
+                            {"role": "user",      "content": f"Qual foi a maior vitória do Farense na época {season}?"},
+                            {"role": "assistant", "content": (
+                                f"Na época {season}, a maior vitória do Farense foi por {score_str} "
+                                f"frente ao {best_match['Equipa']}, a {self._date_pt(best_match['Data'])}, "
+                                f"jogando {self._local_str(best_match['Local'])}."
+                            )},
+                        ]
+                    })
+
+            # ── Q3: Biggest loss of the season ─────────────────────────────
+            losses_scored = [
+                (m, score) for m, score in scored_matches
+                if score and m.get('V-E-D') == 'D'
+            ]
+            if losses_scored:
+                worst_match, worst_score = max(
+                    losses_scored, key=lambda x: x[1][1] - x[1][0]
+                )
+                margin = worst_score[1] - worst_score[0]
+                if margin >= 3:  # only mention notable defeats
+                    score_str = f"{worst_score[0]}-{worst_score[1]}"
+                    pairs.append({
+                        "messages": [
+                            {"role": "system",    "content": system_prompt},
+                            {"role": "user",      "content": f"Qual foi a maior derrota do Farense na época {season}?"},
+                            {"role": "assistant", "content": (
+                                f"Na época {season}, a maior derrota do Farense foi por {score_str} "
+                                f"frente ao {worst_match['Equipa']}, a {self._date_pt(worst_match['Data'])}, "
+                                f"jogando {self._local_str(worst_match['Local'])}."
+                            )},
+                        ]
+                    })
+
+            # ── Q4: Per-competition record (only for named national competitions) ──
+            priority_keywords = [
+                'liga', 'divisão', 'primeira', 'segunda', 'i div', 'ii div',
+                'ligapro', 'liganos', 'betclic', 'sabseg', 'cabovisão', 'nos '
+            ]
+            for comp_name, matches in competitions.items():
+                if not matches:
+                    continue
+                comp_lower = comp_name.lower()
+                if not any(kw in comp_lower for kw in priority_keywords):
+                    continue  # skip cups and regional competitions
+                wins   = sum(1 for m in matches if m.get('V-E-D') == 'V')
+                draws  = sum(1 for m in matches if m.get('V-E-D') == 'E')
+                losses = sum(1 for m in matches if m.get('V-E-D') == 'D')
+                total  = wins + draws + losses
+                comp_short = self._comp_short(comp_name)
+                pairs.append({
+                    "messages": [
+                        {"role": "system",    "content": system_prompt},
+                        {"role": "user",      "content": f"Qual foi o registo do Farense na {comp_short} na época {season}?"},
+                        {"role": "assistant", "content": (
+                            f"Na {comp_short} da época {season}, o Farense disputou "
+                            f"{self._plural(total, 'jogo', 'jogos')}: "
+                            f"{self._plural(wins, 'vitória', 'vitórias')}, "
+                            f"{self._plural(draws, 'empate', 'empates')} e "
+                            f"{self._plural(losses, 'derrota', 'derrotas')}."
+                        )},
+                    ]
+                })
+
+        self.qa_pairs.extend(pairs)
+        logger.info(f"Generated {len(pairs)} Q&A pairs from match results ({len(seasons)} seasons)")
+        return len(pairs)
+
+    # ── Classification helpers ───────────────────────────────────────────────
+
+    def _parse_classification_file(self, filepath) -> dict | None:
+        """
+        Parse a per-epoch classification markdown file.
+        Returns dict with Farense's row data or None if not parseable.
+        """
+        try:
+            with open(filepath, encoding='utf-8') as f:
+                text = f.read()
+        except Exception:
+            return None
+
+        season = filepath.parent.name  # e.g. "1994-95"
+
+        # Competition name from ### header (first one found)
+        comp_match = re.search(r'###\s+(.+)', text)
+        comp_name = comp_match.group(1).strip() if comp_match else ""
+        # Strip trailing year like "1994/95" or "1994/1995"
+        comp_short = re.sub(r'\s+\d{4}/\d{2,4}$', '', comp_name).strip()
+        comp_short = re.sub(r'\s+(19|20)\d{2}$', '', comp_short).strip()
+
+        # Find Farense row: | **Pos** | **Farense** 🦁 | Pts | J | V | E | D | GM | GS |
+        farense_row = re.search(
+            r'\|\s*\*\*(\d+)\*\*\s*\|\s*\*\*Farense[^|]*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)\s*\|\s*(\d+)',
+            text
+        )
+        if not farense_row:
+            return None
+
+        pos, pts, j, v, e, d, gm, gs = [int(x) for x in farense_row.groups()]
+        return {
+            "season": season,
+            "comp_name": comp_name,
+            "comp_short": comp_short,
+            "pos": pos, "pts": pts, "j": j,
+            "v": v, "e": e, "d": d,
+            "gm": gm, "gs": gs,
+        }
+
+    def _ordinal(self, n: int) -> str:
+        return f"{n}º"
 
     def generate_classification_questions(self) -> int:
-        """Generate Q&A pairs from classifications"""
-        # TODO: Implement when we understand the classification data format
-        logger.info("Classification Q&A generation: TODO")
-        return 0
+        """Generate Q&A pairs from historical league table data."""
+        class_dir = self.data_dir / "classificacoes" / "por_epoca"
+        essenciais_file = self.data_dir / "classificacoes" / "classificacoes_essenciais.md"
+
+        if not class_dir.exists():
+            logger.warning(f"Classification directory not found: {class_dir}")
+            return 0
+
+        system_prompt = (
+            "És o Mirobaldo, um assistente virtual especializado na história do "
+            "Sporting Clube Farense. Respondes de forma clara e concisa em português "
+            "europeu, com base nos factos históricos do clube."
+        )
+
+        pairs = []
+
+        # ── 1. Per-season data from por_epoca/ files ───────────────────────
+        class_files = list(class_dir.rglob("*.md"))
+        parsed_seasons = {}  # season → list of dicts (one per competition file)
+
+        for cf in class_files:
+            data = self._parse_classification_file(cf)
+            if data:
+                parsed_seasons.setdefault(data["season"], []).append(data)
+
+        for season in sorted(parsed_seasons):
+            season_data = parsed_seasons[season]
+            # Use the first (main) competition file per season
+            d = season_data[0]
+            comp = d["comp_short"]
+            pos_str = self._ordinal(d["pos"])
+
+            # Q1: Final standing
+            answer_q1 = (
+                f"Na época {season}, o Farense ficou em {pos_str} lugar na {comp}, "
+                f"com {d['pts']} pontos "
+                f"({self._plural(d['v'], 'vitória', 'vitórias')}, "
+                f"{self._plural(d['e'], 'empate', 'empates')} e "
+                f"{self._plural(d['d'], 'derrota', 'derrotas')} "
+                f"em {self._plural(d['j'], 'jogo', 'jogos')})."
+            )
+            pairs.append({
+                "messages": [
+                    {"role": "system",    "content": system_prompt},
+                    {"role": "user",      "content": f"Em que posição ficou o Farense na época {season}?"},
+                    {"role": "assistant", "content": answer_q1},
+                ]
+            })
+
+            # Q2: Points tally
+            answer_q2 = (
+                f"Na {comp} da época {season}, o Farense fez {d['pts']} pontos, "
+                f"terminando em {pos_str} lugar com "
+                f"{d['v']}V {d['e']}E {d['d']}D em {d['j']} jogos "
+                f"(marcou {d['gm']} golos, sofreu {d['gs']})."
+            )
+            pairs.append({
+                "messages": [
+                    {"role": "system",    "content": system_prompt},
+                    {"role": "user",      "content": f"Quantos pontos fez o Farense na época {season}?"},
+                    {"role": "assistant", "content": answer_q2},
+                ]
+            })
+
+        # ── 2. Milestone Q&A from classificacoes_essenciais.md ────────────
+        if essenciais_file.exists():
+            with open(essenciais_file, encoding='utf-8') as f:
+                essenciais = f.read()
+
+            # Parse each ### section
+            sections = re.split(r'\n(?=###\s+)', essenciais)
+            for section in sections:
+                header = re.match(r'###\s+(.+)', section)
+                if not header:
+                    continue
+                full_title = header.group(1).strip()
+
+                # Extract just the season year from titles like "1989/1990 - II DIVISÃO (2º escalão)"
+                season_match = re.match(r'(\d{4}/\d{4}|\d{4}-\d{2})', full_title)
+                season_label = season_match.group(1) if season_match else full_title
+
+                # Extract key fields
+                divisao   = re.search(r'- DIVISÃO:\s*(.+)',        section)
+                classif   = re.search(r'- CLASSIFICAÇÃO:\s*(.+)',  section)
+                pontos    = re.search(r'- PONTOS:\s*(.+)',         section)
+                resultado = re.search(r'- RESULTADO:\s*(.+)',      section)
+                treinador = re.search(r'- TREINADOR:\s*(.+)',      section)
+                goleador  = re.search(r'- GOLEADOR:\s*(.+)',       section)
+
+                if not (divisao and classif):
+                    continue
+
+                div_str     = divisao.group(1).strip()
+                classif_str = classif.group(1).strip()
+                pts_str     = pontos.group(1).strip()    if pontos    else ""
+                result_str  = resultado.group(1).strip() if resultado else ""
+                coach_str   = treinador.group(1).strip() if treinador else ""
+                scorer_str  = goleador.group(1).strip()  if goleador  else ""
+
+                # Build answer prose
+                parts = [f"Na época {season_label}, o Farense competiu na {div_str} e ficou em {classif_str}."]
+                if pts_str:
+                    parts.append(f"Fez {pts_str}.")
+                if result_str:
+                    parts.append(f"Resultado: {result_str}.")
+                if coach_str:
+                    parts.append(f"Treinador: {coach_str}.")
+                if scorer_str:
+                    parts.append(f"Melhor marcador: {scorer_str}.")
+                answer = " ".join(parts)
+
+                # Q: season overview
+                pairs.append({
+                    "messages": [
+                        {"role": "system",    "content": system_prompt},
+                        {"role": "user",      "content": f"Como foi a época {season_label} do Farense?"},
+                        {"role": "assistant", "content": answer},
+                    ]
+                })
+
+                # Q: result/outcome of the season (if notable)
+                if result_str:
+                    pairs.append({
+                        "messages": [
+                            {"role": "system",    "content": system_prompt},
+                            {"role": "user",      "content": f"Qual foi o resultado do Farense na época {season_label}?"},
+                            {"role": "assistant", "content": answer},
+                        ]
+                    })
+
+        # ── 3. Cross-season milestone questions ───────────────────────────
+        # Best top-flight finish (only in I Divisão / Primeira Liga)
+        top_flight_seasons = [
+            (d["season"], d)
+            for season_list in parsed_seasons.values()
+            for d in season_list
+            if self._is_top_flight(d["comp_name"])
+        ]
+        if top_flight_seasons:
+            best = min(top_flight_seasons, key=lambda x: x[1]["pos"])
+            s, d = best
+            pairs.append({
+                "messages": [
+                    {"role": "system",    "content": system_prompt},
+                    {"role": "user",      "content": "Qual foi a melhor classificação de sempre do Farense?"},
+                    {"role": "assistant", "content": (
+                        f"A melhor classificação de sempre do Farense foi na época {s}, "
+                        f"quando terminou em {self._ordinal(d['pos'])} lugar na {d['comp_short']} "
+                        f"com {d['pts']} pontos."
+                    )},
+                ]
+            })
+
+        # Promotions (1st place or 2nd in lower divisions)
+        champion_seasons = [
+            (d["season"], d)
+            for season_list in parsed_seasons.values()
+            for d in season_list
+            if d["pos"] == 1
+        ]
+        if champion_seasons:
+            titles_str = ", ".join(
+                f"{s} ({d['comp_short']})" for s, d in sorted(champion_seasons)
+            )
+            pairs.append({
+                "messages": [
+                    {"role": "system",    "content": system_prompt},
+                    {"role": "user",      "content": "Em que épocas foi o Farense campeão?"},
+                    {"role": "assistant", "content": (
+                        f"O Farense terminou em 1º lugar nas seguintes épocas: {titles_str}."
+                    )},
+                ]
+            })
+
+        self.qa_pairs.extend(pairs)
+        logger.info(
+            f"Generated {len(pairs)} Q&A pairs from classifications "
+            f"({len(parsed_seasons)} seasons parsed)"
+        )
+        return len(pairs)
 
     def save_training_data(self, output_file: str = "training_data_lora.jsonl"):
         """Save Q&A pairs in JSONL format for LoRA training"""

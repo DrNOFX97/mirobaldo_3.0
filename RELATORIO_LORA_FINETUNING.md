@@ -60,11 +60,19 @@ As respostas usavam o **texto completo da biografia** como `assistant` content. 
 | "Quais foram as conquistas de X?" | Detail | 3 | ~250 |
 | "Quando jogou X?" | Overview | 2 | ~150 |
 
-#### Estatísticas do dataset (v3 — versão final)
+#### Estatísticas do dataset (v3)
 - **Total de pares Q&A:** 1664
 - **Jogadores únicos:** 208 (214 ficheiros, 6 duplicatas removidas)
 - **Média de tokens por exemplo:** 75 palavras
 - **Total de tokens:** 124,898
+
+#### Estatísticas do dataset (v4 — versão actual)
+- **Total de pares Q&A:** 2146 (+29% vs v3)
+  - Biografias: 1664
+  - Resultados de jogos: 307 (91 épocas, 1933-34 → 2024-25)
+  - Classificações: 175 (83 épocas + milestones)
+- **Média de tokens por exemplo:** 72 palavras
+- **Total de tokens:** 155,580
 
 #### Problemas encontrados nas versões anteriores do dataset
 
@@ -262,10 +270,25 @@ Os factos específicos (datas, clubes, posições) devem sempre ser fornecidos v
 ## 7. Próximos Passos
 
 - [x] ~~Retreinar com dataset melhorado (v3 — dataset corrigido)~~ ✅ Run 3 completo
-- [ ] Implementar `generate_results_questions()` no generate_qa_pairs.py
-- [ ] Implementar `generate_classification_questions()` no generate_qa_pairs.py
+- [x] ~~Implementar `generate_results_questions()`~~ ✅ 307 pares, 91 épocas
+- [x] ~~Implementar `generate_classification_questions()`~~ ✅ 175 pares, 83 épocas
+
+### Run 4 — Pronto para iniciar
+
+```bash
+source venv/bin/activate
+python backend/train_lora.py
+```
+
+Configuração prevista:
+- Dataset: `training_data_lora.jsonl` (2146 exemplos — dataset v4)
+- Iters: 1608 (2146 // 4 × 3 épocas)
+- Adapters anteriores (Run 3) arquivados em: `backend/lora_adapters_run3/`
+- Output: `backend/lora_adapters/`
+
+### Tarefas pendentes após Run 4
 - [ ] Avaliar perplexidade num conjunto de validação separado
-- [ ] Testar com o frontend
+- [ ] Testar no frontend (browser)
 - [ ] Considerar modelo maior (7B) se alucinações sem RAG forem problemáticas
 
 ---
